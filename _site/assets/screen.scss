@@ -6,8 +6,9 @@
 @import "compass/reset";
 @import "compass/css3";
 
-@import "atoms/typography";
+
 @import "atoms/grid";
+@import "atoms/typography";
 @import "atoms/*";
 
 @import "molecules/typography";
@@ -15,7 +16,7 @@
 
 html {
   body {
-    @include basic-typographic-grid;
+    @include typographic-grid;
     
     article {
       @include hide-title;

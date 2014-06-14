@@ -1,31 +1,61 @@
-
-
-// Setting up the text block
+// Breakpoints
 // -----------------------------------------------
-// Characters per row
-$characters-per-row: 50;
 
-// Text block width
-$text-block-width: $characters-per-row * $gutter/2; 
+$breakpoint-tablet: 48em; // 768px
+$breakpoint-large-screen: 90em; // 1440px
 
-// How many lines are in a txt-block
-$lines-in-text-block: 4;
 
-// Text block height
-$text-block-height: $lines-in-text-block * $gutter;
+
+@mixin below-tablet {
+  @media only screen and (max-width: $breakpoint-tablet - 0.001) {
+    @content
+  }
+}
+
+@mixin large-screen-and-up {
+  @media only screen and (min-width: $breakpoint-large-screen + 0.001) {
+    @content
+  }
+}
 
 
 
 // Setting up the grid
 // -----------------------------------------------
-// Number of grid cells in a text block
-$cells-in-a-text-block: 6;
-
-// Grid cell width
-$grid-cell-width: $text-block-width / $cells-in-a-text-block;
-$grid-width: $grid-cell-width;
-
-// Grid cell height
-$grid-cell-height: $text-block-height;
-$grid-height: $grid-cell-height;
+// - we will have a grid for text like blog posts, excrpts
+// - we will have a grid for non-text elements
+// - global variables set up:
+//  - $text-grid-width, $text-grid-height
+//  - $grid-width, $grid-height;
+@mixin setup-grid($gutter) {
+  // Setting up the text block
+  // -----------------------------------------------
+  // Characters per row
+  $characters-per-row: 50;
+  
+  // Text block width
+  $text-block-width: $characters-per-row * $gutter/2; 
+  $text-grid-width: $text-block-width !global;
+  
+  // How many lines are in a txt-block
+  $lines-in-text-block: 4;
+  
+  // Text block height
+  $text-block-height: $lines-in-text-block * $gutter;
+  $text-grid-height: $text-block-height !global;
+  
+  
+  // Setting up the grid
+  // -----------------------------------------------
+  // Number of grid cells in a text block
+  $cells-in-a-text-block: 6;
+  
+  // Grid cell width
+  $grid-cell-width: $text-block-width / $cells-in-a-text-block;
+  $grid-width: $grid-cell-width !global;
+  
+  // Grid cell height
+  $grid-cell-height: $text-block-height;
+  $grid-height: $grid-cell-height !global;
+}
 

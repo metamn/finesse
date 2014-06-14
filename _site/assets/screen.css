@@ -17,4 +17,6 @@ a img { border: none; }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
 html body { font-family: "Lato", sans-serif; font-size: 100%; line-height: 1.25; }
+@media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
 html body article > h3 { display: none; }
