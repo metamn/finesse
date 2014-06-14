@@ -1,0 +1,20 @@
+// The basic font family
+$font-family: 'Lato', sans-serif;
+
+// The basic font-size
+$font-size: 100%;
+
+// The basic line height
+$line-height: 1.25;
+
+// The basic line height in EM
+$gutter: 1.25em;
+
+
+  
+// Setting up the typographic grid based on basic font
+@mixin basic-typographic-grid {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+}

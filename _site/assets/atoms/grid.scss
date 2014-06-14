@@ -1,0 +1,31 @@
+
+
+// Setting up the text block
+// -----------------------------------------------
+// Characters per row
+$characters-per-row: 50;
+
+// Text block width
+$text-block-width: $characters-per-row * $gutter/2; 
+
+// How many lines are in a txt-block
+$lines-in-text-block: 4;
+
+// Text block height
+$text-block-height: $lines-in-text-block * $gutter;
+
+
+
+// Setting up the grid
+// -----------------------------------------------
+// Number of grid cells in a text block
+$cells-in-a-text-block: 6;
+
+// Grid cell width
+$grid-cell-width: $text-block-width / $cells-in-a-text-block;
+$grid-width: $grid-cell-width;
+
+// Grid cell height
+$grid-cell-height: $text-block-height;
+$grid-height: $grid-cell-height;
+

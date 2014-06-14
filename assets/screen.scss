@@ -5,3 +5,13 @@
 
 @import "compass/reset";
 @import "compass/css3";
+
+@import "atoms/typography";
+@import "atoms/grid";
+
+
+html {
+  body {
+    @include basic-typographic-grid;
+  }
+}
