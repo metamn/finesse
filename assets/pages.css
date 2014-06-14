@@ -1,23 +1,14 @@
 /*
 Syntax error: Undefined variable: "$gutter".
-        on line 37 of /home/cs/work/finesse/assets/visual-grid.scss
+        on line 6 of /home/cs/work/finesse/assets/pages.scss
+
+1: /home/cs/work/finesse/assets/pages.scss
 
 Backtrace:
-/home/cs/work/finesse/assets/visual-grid.scss:37
+/home/cs/work/finesse/assets/pages.scss:6
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/script/tree/variable.rb:49:in `_perform'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/script/tree/node.rb:50:in `perform'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:366:in `visit_prop'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:389:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/base.rb:36:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:79:in `block in with_base'
@@ -91,4 +82,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$gutter\".\A         on line 37 of /home/cs/work/finesse/assets/visual-grid.scss"; }
+  content: "Syntax error: Undefined variable: \"$gutter\".\A         on line 6 of /home/cs/work/finesse/assets/pages.scss\A \A 1: /home/cs/work/finesse/assets/pages.scss"; }
