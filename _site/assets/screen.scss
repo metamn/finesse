@@ -8,10 +8,17 @@
 
 @import "atoms/typography";
 @import "atoms/grid";
+@import "atoms/*";
+
+@import "molecules/typography";
 
 
 html {
   body {
     @include basic-typographic-grid;
+    
+    article {
+      @include hide-title;
+    }
   }
 }
