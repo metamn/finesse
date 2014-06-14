@@ -1,4 +1,7 @@
 @mixin article-beauty {
+  max-width: $text-width;
+  float: left;
+  
   margin-left: col(2);
   @include below-tablet {
     margin-left: col(1);
@@ -7,7 +10,14 @@
     margin-left: 0;
   }
   
+  &:last-of-type {
+    margin-left: col(1);
+    margin-top: row(1);
+  }
+  
   blockquote {
+    max-width: col(1);
+    
     font-weight: 300;
     font-style: italic;
     @include h1;
@@ -18,15 +28,6 @@
       padding: 0 $gutter/8;
       font-weight: 400;
       font-style: normal;
-    }
-    
-    &:first-of-type {
-      max-width: col(1);
-    }
-    
-    &:last-of-type {
-      margin-left: col(1);
-      
     }
   }
 }

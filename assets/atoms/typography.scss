@@ -80,6 +80,24 @@ $gutter: 1.25em;
 
 @mixin em {
   font-style: italic;
+  font-weight: 300;
+}
+
+
+
+
+
+// Extended typographic elements
+// =======================================================================================================
+
+
+@mixin sub {
+  vertical-align: sub;
+}
+
+@mixin time {
+  font-variant: small-caps;
+  letter-spacing: 1px;
 }
 
 @mixin author {
@@ -94,6 +112,9 @@ $gutter: 1.25em;
   }
 }
 
+
+
+
 @mixin basic-typographic-elements {
   p {
     @include p;
@@ -105,5 +126,13 @@ $gutter: 1.25em;
   
   author {
     @include author;
+  }
+  
+  time {
+    @include time;
+  }
+  
+  sub {
+    @include sub;
   }
 }
