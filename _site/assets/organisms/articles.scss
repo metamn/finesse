@@ -1,0 +1,9 @@
+@mixin article-intro {
+  @include rows(2);
+  
+  p {
+    @include strapline;
+    @include rows(1);
+  }
+  
+}
