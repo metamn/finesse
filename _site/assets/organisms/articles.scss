@@ -1,6 +1,4 @@
 @mixin article-beauty {
-  max-width: $text-width;
-  
   margin-left: col(2);
   @include below-tablet {
     margin-left: col(1);
@@ -17,9 +15,18 @@
     dfn {
       background: red;
       color: white;
-      padding: $gutter/8;
+      padding: 0 $gutter/8;
       font-weight: 400;
       font-style: normal;
+    }
+    
+    &:first-of-type {
+      max-width: col(1);
+    }
+    
+    &:last-of-type {
+      margin-left: col(1);
+      
     }
   }
 }
