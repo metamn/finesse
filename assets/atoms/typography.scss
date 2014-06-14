@@ -32,8 +32,5 @@ $gutter: 1.25em;
   @include large-screen-and-up {
     font-size: $large-font-size;  
   }
-    
-  @include setup-grid($gutter);
 }
-
 

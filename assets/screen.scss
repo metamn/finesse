@@ -10,16 +10,32 @@
 @import "atoms/grid";
 @import "atoms/typography";
 @import "atoms/*";
+@import "molecules/*";
 
-@import "molecules/typography";
+
+@import "visual-grid";
+#gravity { display: none; }
+
 
 
 html {
   body {
+    // - we have to add a $gutter to the top of screen to reset the typographic grid
+    // - otherwise we will have one row plus in the first text box (5 instead of just 4)  
+    margin: $gutter auto;
     @include typographic-grid;
     
-    article {
-      @include hide-title;
+    .container {  
+      header {
+        display: none;
+      }
+    
+      article {
+        @include hide-title;
+        @include rows(1);
+      }
     }
   }
 }
+
+
