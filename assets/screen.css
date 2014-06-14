@@ -32,11 +32,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 #grid .gutter-bottom { float: left; border-bottom: 1px solid; height: calc(1.25em - 1px); width: 100%; }
 
-#gravity { display: none; }
+#grid, #gravity { display: none; }
 
-html body { margin: 1.25em auto; font-family: "Lato", sans-serif; font-size: 100%; line-height: 1.25; }
+html body { margin: 1.25em; font-family: "Lato", sans-serif; font-size: 100%; line-height: 1.25; }
 @media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
-html body .container header { display: none; }
+html body h1 { font-size: 4.4747em; }
+@media only screen and (max-width: 47.999em) { html body h1 { font-size: 2.6364em; } }
+@media only screen and (max-width: 30em) { html body h1 { font-size: 1.6364em; } }
+html body em { font-style: italic; }
+html body author { font-variant: small-caps; letter-spacing: 1px; }
+html body author:before { content: 'by '; font-variant: normal; font-style: italic; font-size: smaller; }
+html body article > h3, html body nav > h3 { display: none; }
+html body .container header { height: 6.25em; }
 html body .container article { height: 6.25em; }
-html body .container article > h3 { display: none; }
+html body .container article.intro { height: 12.5em; }
+html body .container article.intro p { max-width: 31.25em; height: 6.25em; }

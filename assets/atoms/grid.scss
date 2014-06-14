@@ -1,10 +1,16 @@
 // Breakpoints
-// -----------------------------------------------
+// =======================================================================================================
 
+$breakpoint-mobile: 30em; // 480px
 $breakpoint-tablet: 48em; // 768px
 $breakpoint-large-screen: 90em; // 1440px
 
 
+@mixin mobile {
+  @media only screen and (max-width: $breakpoint-mobile) {
+    @content
+  }
+}
 
 @mixin below-tablet {
   @media only screen and (max-width: $breakpoint-tablet - 0.001) {
@@ -23,7 +29,7 @@ $breakpoint-large-screen: 90em; // 1440px
 
 
 // Setting up the typographic and the usual grid
-// -----------------------------------------------
+// =======================================================================================================
 // - we will have a grid for text elements like blog posts, excerpts
 // - we will have a grid for non-text elements
 // - global variables set up are: $text-grid-width, $text-grid-height, $grid-width, $grid-height;
@@ -31,6 +37,7 @@ $breakpoint-large-screen: 90em; // 1440px
 // $gutter is defined in the typographic settings based on $line-height
 // we will redefine here because is always has the 1.25em value
 $gutter: 1.25em;
+
 
 // Setting up the text block
 // -----------------------------------------------
@@ -51,6 +58,7 @@ $text-grid-height: $text-block-height;
 $text-height: $text-grid-height;
 
 
+
 // Setting up the grid
 // -----------------------------------------------
 // Number of grid cells in a text block
@@ -68,7 +76,7 @@ $grid-height: $grid-cell-height;
 
 
 // Grid functions
-// -----------------------------------------------
+// =======================================================================================================
 
 
 @mixin rows($nr) {
@@ -86,4 +94,15 @@ $grid-height: $grid-cell-height;
 
 @function col($nr) {
   @return $nr * ($grid-width + $gutter);
+}
+
+
+
+
+// General mixins
+// =======================================================================================================
+
+@mixin block {
+  width: 100%;
+  float: left;
 }
