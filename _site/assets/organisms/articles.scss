@@ -1,36 +1,23 @@
 @mixin article-beauty {
-  max-width: $text-width;
-  float: left;
-  
-  margin-left: col(2);
-  @include below-tablet {
-    margin-left: col(1);
-  }
-  @include mobile {
-    margin-left: 0;
-  }
-  
-  &:last-of-type {
-    margin-left: col(1);
-    margin-top: row(1);
-  }
-  
   blockquote {
+    @include blockquote;
     max-width: col(1);
+    float: left;
     
-    font-weight: 300;
-    font-style: italic;
-    @include h1;
+    opacity: 0;
+    &:nth-of-type(2) {
+      opacity: 1;
+    }
     
     dfn {
-      background: red;
-      color: white;
-      padding: 0 $gutter/8;
+      @include dfn;      
       font-weight: 400;
       font-style: normal;
     }
   }
 }
+
+
 
 @mixin article-intro {
   @include rows(2);
@@ -38,4 +25,10 @@
   p {
     @include rows(1);
   }
+  
+  dfn {
+    @include dfn;
+  }
+  
+  
 }

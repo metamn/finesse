@@ -107,11 +107,18 @@ $gutter: 1.25em;
   &:before {
     content: 'by ';
     font-variant: normal;
-    font-style: italic;
-    font-size: smaller;
+    @include em;
   }
 }
 
+@mixin blockquote {
+  @include em;
+  @include h1;
+}
+
+@mixin dfn {
+  @include color($background, $beauty, 0 $gutter/8 $gutter/8);
+}
 
 
 

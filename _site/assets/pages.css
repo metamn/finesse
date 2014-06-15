@@ -1,11 +1,9 @@
 /*
 Syntax error: Undefined variable: "$gutter".
-        on line 6 of /home/cs/work/finesse/assets/pages.scss
-
-1: /home/cs/work/finesse/assets/pages.scss
+        on line 10 of /home/cs/work/finesse/assets/pages.scss
 
 Backtrace:
-/home/cs/work/finesse/assets/pages.scss:6
+/home/cs/work/finesse/assets/pages.scss:10
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/script/tree/variable.rb:49:in `_perform'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/script/tree/node.rb:50:in `perform'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:366:in `visit_prop'
@@ -82,4 +80,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$gutter\".\A         on line 6 of /home/cs/work/finesse/assets/pages.scss\A \A 1: /home/cs/work/finesse/assets/pages.scss"; }
+  content: "Syntax error: Undefined variable: \"$gutter\".\A         on line 10 of /home/cs/work/finesse/assets/pages.scss"; }
