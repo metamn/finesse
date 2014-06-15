@@ -74,9 +74,30 @@ $gutter: 1.25em;
 // Basic typographic elements
 // =======================================================================================================
 
+@mixin p {
+  max-width: $text-width;
+}
 
 @mixin em {
   font-style: italic;
+  font-weight: 300;
+}
+
+
+
+
+
+// Extended typographic elements
+// =======================================================================================================
+
+
+@mixin sub {
+  vertical-align: sub;
+}
+
+@mixin time {
+  font-variant: small-caps;
+  letter-spacing: 1px;
 }
 
 @mixin author {
@@ -86,17 +107,39 @@ $gutter: 1.25em;
   &:before {
     content: 'by ';
     font-variant: normal;
-    font-style: italic;
-    font-size: smaller;
+    @include em;
   }
 }
 
+@mixin blockquote {
+  @include em;
+  @include h1;
+}
+
+@mixin dfn {
+  @include color($background, $beauty, 0 $gutter/8 $gutter/8);
+}
+
+
+
 @mixin basic-typographic-elements {
+  p {
+    @include p;
+  }
+  
   em {
     @include em;
   }
   
   author {
     @include author;
+  }
+  
+  time {
+    @include time;
+  }
+  
+  sub {
+    @include sub;
   }
 }
