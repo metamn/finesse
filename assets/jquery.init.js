@@ -9,3 +9,21 @@ jsPlumb.ready(function() {
     endpoint: "Blank"
   });
 });
+
+
+$('document').ready(function() {
+  
+  
+  // Sliding through blockquotes in Beauty
+  // -------------------------------------
+  $('.beauty span ').click(function() {
+    var item = $('.beauty blockquote.active');
+    item.removeClass('active');
+    
+    var next = item.next();
+    if (!(next.is('blockquote'))) {
+      next = $('.beauty blockquote').first();
+    } 
+    next.addClass('active');
+  });
+});
