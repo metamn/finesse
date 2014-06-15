@@ -1,0 +1,5 @@
+@mixin hide-title {
+  > h3 {
+    display: none;
+  }
+}
