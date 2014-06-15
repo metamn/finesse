@@ -12,41 +12,13 @@
 @import "atoms/*";
 @import "molecules/*";
 @import "organisms/*";
+@import "pages";
 
 @import "visual-grid";
 #grid, #gravity { display: none; }
 
 
 
-html {
-  body {
-    // - we have to add a $gutter to the top of screen to reset the typographic grid
-    // - otherwise we will have one row plus in the first text box (5 instead of just 4)
-    // - now we'll make also the lateral margin a $gutter, later this might be revisited
-    margin: $gutter;
-    
-    @include typographic-grid;
-    @include headings;
-    @include basic-typographic-elements;
-    
-    article, nav {
-      @include hide-title;
-    }
-    
-    .container {  
-      header {
-        @include rows(1);
-      }
-    
-      article {
-        @include rows(1);
-        
-        &.intro {
-          @include article-intro;
-        }
-      }
-    }
-  }
-}
+
 
 

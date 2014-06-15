@@ -20,7 +20,7 @@
     	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
     
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,400,400italic,700' rel='stylesheet' type='text/css'>
   </head>
   
   <body class=" frontpage">
@@ -30,32 +30,41 @@
 
 <header>
   <h1>
-    storytelling <em>and</em> finesse
+    finesse
   </h1>
 </header>
 
 <article class="intro">
   <h3>Intro</h3>
   <p>
-    this is an attempt on responsive storytelling showcasing web design & development best practices.
+    a search for <dfn id="beauty-1">beauty</dfn> in responsive storytelling 
   </p>
   
   <nav class="meta">
     <h3>Meta</h3>
     <ul>
       <li><author>csongor bartus</author></li>
-      <li><time datetime="2014">summer of 2014</time></li>
+      <li><time datetime="2014">2014</time></li>
     </ul>
   </nav>
 </article>
 
-<article>
-  <ol>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-  </ol>
+<article class="beauty">
+  <h3>Beauty</h3>
+  
+  <blockquote>
+    <dfn>beauty</dfn> is the experience of pleasure and satisfaction
+  </blockquote>
+  
+  <blockquote class="active">
+    <dfn id="beauty-3">beauty</dfn> is oneness and diversity in harmony
+  </blockquote>
+  
+  <blockquote>
+    <dfn>beauty</dfn> is that thing worth living and dying for
+  </blockquote>
+  
+  <span>></span>
 </article>
 
 
@@ -67,8 +76,15 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('/assets/jquery-1.10.2.min.js">\x3C/script>')</script>
 
+<!-- jsPlumb -->
+<script src="http://metamn.github.io/finesse/assets/jquery.jsPlumb-1.6.2-min.js"></script>
+
 <!-- Site specific scripts  -->
 <script src="http://metamn.github.io/finesse/assets/jquery.init.js"></script>
+
+<script>
+  var elements = '[{"id" : "header", "type" : "text"},{"id" : ".intro", "type" : "text"},{"id" : ".beauty", "type" : "image"}]';
+</script>
 
 <!-- the visual grid -->
 <script type="text/javascript" src="http://metamn.github.io/finesse/assets/jquery.visual.grid.js"></script>

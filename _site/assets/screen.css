@@ -16,6 +16,31 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
+html body { position: relative; margin: 1.25em; font-family: "Lato", sans-serif; font-size: 100%; line-height: 1.25; }
+@media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
+html body h1 { font-size: 4.4747em; }
+@media only screen and (max-width: 47.999em) { html body h1 { font-size: 2.6364em; } }
+@media only screen and (max-width: 30em) { html body h1 { font-size: 1.6364em; } }
+html body p { max-width: 31.25em; }
+html body em { font-style: italic; font-weight: 300; }
+html body author { font-variant: small-caps; letter-spacing: 1px; }
+html body author:before { content: 'by '; font-variant: normal; font-style: italic; font-weight: 300; }
+html body time { font-variant: small-caps; letter-spacing: 1px; }
+html body sub { vertical-align: sub; }
+html body article > h3, html body nav > h3 { display: none; }
+html body.frontpage .container header { height: 6.25em; }
+html body.frontpage .container article.intro { height: 12.5em; }
+html body.frontpage .container article.intro p { height: 6.25em; }
+html body.frontpage .container article.intro dfn { color: white; background: red; padding: 0 0.15625em 0.15625em; }
+html body.frontpage .container article.beauty blockquote, html body.frontpage .container article.beauty span { font-style: italic; font-weight: 300; font-size: 4.4747em; max-width: 6.45833em; margin: 0 auto; }
+@media only screen and (max-width: 47.999em) { html body.frontpage .container article.beauty blockquote, html body.frontpage .container article.beauty span { font-size: 2.6364em; } }
+@media only screen and (max-width: 30em) { html body.frontpage .container article.beauty blockquote, html body.frontpage .container article.beauty span { font-size: 1.6364em; } }
+html body.frontpage .container article.beauty blockquote { display: none; }
+html body.frontpage .container article.beauty blockquote dfn { color: white; background: red; padding: 0 0.15625em 0.15625em; font-weight: 400; font-style: normal; }
+html body.frontpage .container article.beauty blockquote.active { display: block; }
+html body.frontpage .container article.beauty span { display: block; color: red; cursor: pointer; }
+
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }
 #gravity .h-horizontal { top: calc(50% - 1px); width: 100%; border-bottom: 1px solid red; }
@@ -33,18 +58,3 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #grid .gutter-bottom { float: left; border-bottom: 1px solid; height: calc(1.25em - 1px); width: 100%; }
 
 #grid, #gravity { display: none; }
-
-html body { margin: 1.25em; font-family: "Lato", sans-serif; font-size: 100%; line-height: 1.25; }
-@media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
-@media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
-html body h1 { font-size: 4.4747em; }
-@media only screen and (max-width: 47.999em) { html body h1 { font-size: 2.6364em; } }
-@media only screen and (max-width: 30em) { html body h1 { font-size: 1.6364em; } }
-html body em { font-style: italic; }
-html body author { font-variant: small-caps; letter-spacing: 1px; }
-html body author:before { content: 'by '; font-variant: normal; font-style: italic; font-size: smaller; }
-html body article > h3, html body nav > h3 { display: none; }
-html body .container header { height: 6.25em; }
-html body .container article { height: 6.25em; }
-html body .container article.intro { height: 12.5em; }
-html body .container article.intro p { max-width: 31.25em; height: 6.25em; }
