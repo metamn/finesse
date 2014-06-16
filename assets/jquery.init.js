@@ -16,6 +16,7 @@ $('document').ready(function() {
   
   // Sliding through blockquotes in Beauty
   // -------------------------------------
+  
   $('.beauty span ').click(function() {
     var item = $('.beauty blockquote.active');
     item.removeClass('active');

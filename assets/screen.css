@@ -30,10 +30,9 @@ html body time { font-variant: small-caps; letter-spacing: 1px; }
 html body sub { vertical-align: sub; }
 html body article > h3, html body nav > h3 { display: none; }
 html body.frontpage .container header { height: 6.25em; }
-html body.frontpage .container article.intro { height: 12.5em; }
-html body.frontpage .container article.intro p { height: 6.25em; }
+html body.frontpage .container article.intro { height: 6.25em; }
 html body.frontpage .container article.intro dfn { color: white; background: red; padding: 0 0.15625em 0.15625em; }
-html body.frontpage .container article.beauty blockquote, html body.frontpage .container article.beauty span { font-style: italic; font-weight: 300; font-size: 4.4747em; max-width: 6.45833em; margin: 0 auto; }
+html body.frontpage .container article.beauty blockquote, html body.frontpage .container article.beauty span { font-style: italic; font-weight: 300; font-size: 4.4747em; max-width: 6.45833em; margin: 0 auto; position: relative; top: 0; }
 @media only screen and (max-width: 47.999em) { html body.frontpage .container article.beauty blockquote, html body.frontpage .container article.beauty span { font-size: 2.6364em; } }
 @media only screen and (max-width: 30em) { html body.frontpage .container article.beauty blockquote, html body.frontpage .container article.beauty span { font-size: 1.6364em; } }
 html body.frontpage .container article.beauty blockquote { display: none; }
