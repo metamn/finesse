@@ -3,6 +3,9 @@
     @include blockquote;
     max-width: col(1);
     margin: 0 auto;
+    
+    position: relative;
+    top: 0;
   }
   
   blockquote {
@@ -12,11 +15,11 @@
       font-style: normal;
     }
     
+    // cannot be moved to JS because of jsPlumb connecting the two 'beauty'-es
     display: none;
     &.active {
       display: block;
     }
-    
   }
   
   span {
@@ -27,13 +30,8 @@
 }
 
 
-
 @mixin article-intro {
-  @include rows(2);
-  
-  p {
-    @include rows(1);
-  }
+  @include rows(1);
   
   dfn {
     @include dfn;
