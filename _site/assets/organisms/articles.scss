@@ -15,14 +15,11 @@
       font-style: normal;
     }
     
+    // cannot be moved to JS because of jsPlumb connecting the two 'beauty'-es
     display: none;
-    animation: disappear 5s;
-    
     &.active {
-      //animation: appear 5s;
       display: block;
     }
-    
   }
   
   span {
@@ -32,24 +29,9 @@
   }
 }
 
-@keyframes appear {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@keyframes disappear {
-  0%   { opacity: 1; }
-  100% { opacity: 0; }
-}
-
-
 
 @mixin article-intro {
-  @include rows(2);
-  
-  p {
-    @include rows(1);
-  }
+  @include rows(1);
   
   dfn {
     @include dfn;
