@@ -3,22 +3,31 @@
   
   .arrow {
     @include center(horizontal);
+    display: inline-flex;
     position: relative;
-    top: -$gutter + $gutter/4;
+    top: -$gutter/2;
+    left: calc(50% - #{$gutter});
     
-    display: inline-block;
-    cursor: pointer;
-    font-size: larger;
-    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-    @include color($background, $color, $gutter/4 $gutter/2);
-    @include transform(rotate(90deg));
+    @include color($background, $color, $gutter/2);
     @include border-radius($gutter);
-    border-right: 1px solid;
+    cursor: pointer;
+    
+    img {
+      width: $gutter;
+    }
+    
+    &.down {
+      @include transform(rotate(90deg));
+    }
+    
+    &.top {
+      @include transform(rotate(-90deg));
+    }
   }
   
   opacity: 0;
   @include animation(show-beauty-section 3s forwards);
-  @include experimental(animation-delay, 3s);
+  @include experimental(animation-delay, 1s);
 }
 
 
