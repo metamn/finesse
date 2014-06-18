@@ -1,19 +1,47 @@
+@mixin beauty {
+  @include color($background, $color);
+  
+  .arrow {
+    @include center(horizontal);
+    position: relative;
+    top: -$gutter + $gutter/4;
+    
+    display: inline-block;
+    cursor: pointer;
+    font-size: larger;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    @include color($background, $color, $gutter/4 $gutter/2);
+    @include transform(rotate(90deg));
+    @include border-radius($gutter);
+    border-right: 1px solid;
+  }
+  
+  opacity: 0;
+  @include animation(show-beauty-section 3s forwards);
+  @include experimental(animation-delay, 3s);
+}
+
+
+
 @mixin intro {
-  p, h1 {
+  header {
     text-align: center;
     @include center;
+  }
+  
+  p { 
+    margin-bottom: $gutter;
+    span {
+      border: 1px solid white;
+      padding: $gutter/8 $gutter/4;
+      
+      @include animation(beauty-on-frontpage 3s forwards);
+    }
   }
   
   h1 {
     @include h1;
     font-style: italic;
-    margin-top: 1.28228em;
   }
   
-  p span {
-    @include animation(beauty-on-frontpage 3s forwards);
-    
-    border: 1px solid white;
-    padding: $gutter/8 $gutter/4;
-  }
 }

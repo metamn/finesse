@@ -2,22 +2,13 @@
 // =======================================================================================================
 
 
-@mixin animation($content) {
-  @include experimental(animation, $content, -webkit, -moz, not -o, not -ms, official);
-}
-
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} {
-    @content;
+@include keyframes(show-beauty-section) {
+  0% {
+    opacity: 0;
   }
-  @-moz-keyframes #{$name} {
-    @content;
-  }
-  @-ms-keyframes #{$name} {
-    @content;
-  }
-  @keyframes #{$name} {
-    @content;
+  
+  100% {
+    opacity: 1;
   }
 }
 
@@ -52,6 +43,29 @@
     background: $beauty;
   }
 }
+
+
+
+@mixin animation($animation1, $animation2: false, $animation3: false, $animation4: false, $animation5: false, $animation6: false, $animation7: false) {
+  $content: compact($animation1, $animation2, $animation3, $animation4, $animation5, $animation6, $animation7); 
+  @include experimental(animation, $content, -webkit, -moz, not -o, not -ms, official);
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
 
 
 

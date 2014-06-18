@@ -9,8 +9,12 @@ html {
     
     &.frontpage {
       section {
-        &.intro {
+        &#intro {
           @include intro;
+        }
+        
+        &#beauty {
+          @include beauty;
         }
       } 
     }

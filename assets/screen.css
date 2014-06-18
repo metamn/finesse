@@ -18,17 +18,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Center vertically or horizontally - http://davidwalsh.name/css-vertical-center 
 */
-@-webkit-keyframes beauty-on-frontpage { 10% { border-color: white white white #ffb2b2; background: white; color: #404040; }
-  20% { border-color: #ffb2b2 white white #ffb2b2; background: white; color: #404040; }
-  30% { border-color: #ffb2b2 #ffb2b2 white #ffb2b2; background: white; color: #404040; }
-  40% { border-color: #ffb2b2; background: white; color: #404040; }
-  100% { border-color: #ffb2b2; background: #ffb2b2; } }
+@-moz-keyframes show-beauty-section { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+@-webkit-keyframes show-beauty-section { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+@keyframes show-beauty-section { 0% { opacity: 0; }
+  100% { opacity: 1; } }
 @-moz-keyframes beauty-on-frontpage { 10% { border-color: white white white #ffb2b2; background: white; color: #404040; }
   20% { border-color: #ffb2b2 white white #ffb2b2; background: white; color: #404040; }
   30% { border-color: #ffb2b2 #ffb2b2 white #ffb2b2; background: white; color: #404040; }
   40% { border-color: #ffb2b2; background: white; color: #404040; }
   100% { border-color: #ffb2b2; background: #ffb2b2; } }
-@-ms-keyframes beauty-on-frontpage { 10% { border-color: white white white #ffb2b2; background: white; color: #404040; }
+@-webkit-keyframes beauty-on-frontpage { 10% { border-color: white white white #ffb2b2; background: white; color: #404040; }
   20% { border-color: #ffb2b2 white white #ffb2b2; background: white; color: #404040; }
   30% { border-color: #ffb2b2 #ffb2b2 white #ffb2b2; background: white; color: #404040; }
   40% { border-color: #ffb2b2; background: white; color: #404040; }
@@ -46,11 +47,14 @@ html body { font-family: "Old Standard TT", serif; font-size: 100%; line-height:
 @media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
 html body section > h3, html body nav > h3 { display: none; }
-html body.frontpage section.intro p, html body.frontpage section.intro h1 { text-align: center; position: relative; top: 50%; left: 50%; -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
-html body.frontpage section.intro h1 { font-size: 3.4231em; font-style: italic; margin-top: 1.28228em; }
-@media only screen and (max-width: 47.999em) { html body.frontpage section.intro h1 { font-size: font-size-4; } }
-@media only screen and (max-width: 30em) { html body.frontpage section.intro h1 { font-size: font-size-3; } }
-html body.frontpage section.intro p span { -webkit-animation: beauty-on-frontpage 3s forwards; -moz-animation: beauty-on-frontpage 3s forwards; animation: beauty-on-frontpage 3s forwards; border: 1px solid white; padding: 0.15625em 0.3125em; }
+html body.frontpage section#intro header { text-align: center; position: relative; top: 50%; left: 50%; -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
+html body.frontpage section#intro p { margin-bottom: 1.25em; }
+html body.frontpage section#intro p span { border: 1px solid white; padding: 0.15625em 0.3125em; -webkit-animation: beauty-on-frontpage 3s forwards; -moz-animation: beauty-on-frontpage 3s forwards; animation: beauty-on-frontpage 3s forwards; }
+html body.frontpage section#intro h1 { font-size: 3.4231em; font-style: italic; }
+@media only screen and (max-width: 47.999em) { html body.frontpage section#intro h1 { font-size: font-size-4; } }
+@media only screen and (max-width: 30em) { html body.frontpage section#intro h1 { font-size: font-size-3; } }
+html body.frontpage section#beauty { color: white; background: #404040; padding: 0; opacity: 0; -webkit-animation: show-beauty-section 3s forwards; -moz-animation: show-beauty-section 3s forwards; animation: show-beauty-section 3s forwards; -webkit-animation-delay: 3s; -moz-animation-delay: 3s; -ms-animation-delay: 3s; -o-animation-delay: 3s; animation-delay: 3s; }
+html body.frontpage section#beauty .arrow { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); position: relative; top: -0.9375em; display: inline-block; cursor: pointer; font-size: larger; font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; color: white; background: #404040; padding: 0.3125em 0.625em; -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; border-right: 1px solid; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }

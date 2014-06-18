@@ -1,70 +1,14 @@
 /*
-Syntax error: Undefined variable: "$beauty".
-        on line 27 of /home/cs/work/finesse/assets/atoms/decorations.scss, in `@content'
-        from line 11 of /home/cs/work/finesse/assets/atoms/decorations.scss, in `keyframes'
-        from line 25 of /home/cs/work/finesse/assets/atoms/decorations.scss
+Syntax error: Undefined mixin 'keyframes'.
+        on line 5 of /home/cs/work/finesse/assets/atoms/decorations.scss, in `keyframes'
+        from line 5 of /home/cs/work/finesse/assets/atoms/decorations.scss
+
+1: /home/cs/work/finesse/assets/atoms/decorations.scss
 
 Backtrace:
-/home/cs/work/finesse/assets/atoms/decorations.scss:27:in `@content'
-/home/cs/work/finesse/assets/atoms/decorations.scss:11:in `keyframes'
-/home/cs/work/finesse/assets/atoms/decorations.scss:25
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/script/tree/variable.rb:49:in `_perform'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/script/tree/node.rb:50:in `perform'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/script/tree/list_literal.rb:62:in `block in _perform'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/script/tree/list_literal.rb:62:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/script/tree/list_literal.rb:62:in `_perform'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/script/tree/node.rb:50:in `perform'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:366:in `visit_prop'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:389:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:353:in `block (3 levels) in visit_content'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:353:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:353:in `block (2 levels) in visit_content'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:352:in `block in visit_content'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:98:in `block in with_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:98:in `with_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:348:in `visit_content'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:469:in `block (2 levels) in visit_directive'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:469:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:469:in `block in visit_directive'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:468:in `visit_directive'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:335:in `block (4 levels) in visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:335:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:335:in `block (3 levels) in visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:335:in `block (2 levels) in visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:78:in `perform_arguments'
-/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:330:in `block in visit_mixin'
+/home/cs/work/finesse/assets/atoms/decorations.scss:5:in `keyframes'
+/home/cs/work/finesse/assets/atoms/decorations.scss:5
+/var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:98:in `block in with_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:115:in `with_frame'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:98:in `with_mixin'
@@ -120,4 +64,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$beauty\".\A         on line 27 of /home/cs/work/finesse/assets/atoms/decorations.scss, in `@content'\A         from line 11 of /home/cs/work/finesse/assets/atoms/decorations.scss, in `keyframes'\A         from line 25 of /home/cs/work/finesse/assets/atoms/decorations.scss"; }
+  content: "Syntax error: Undefined mixin 'keyframes'.\A         on line 5 of /home/cs/work/finesse/assets/atoms/decorations.scss, in `keyframes'\A         from line 5 of /home/cs/work/finesse/assets/atoms/decorations.scss\A \A 1: /home/cs/work/finesse/assets/atoms/decorations.scss"; }
