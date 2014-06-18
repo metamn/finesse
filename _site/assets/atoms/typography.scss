@@ -1,0 +1,92 @@
+// Fonts
+// =======================================================================================================
+
+
+// The basic font family
+$font-family: 'Old Standard TT', serif;
+
+// The basic font-size
+// - the first rule of typography is to make the basic font perfectly readable 
+// - in a responsive environment this means we will have different, scaling settings for small screens (tablets and below), normal screens (laptops) and monitors
+$small-font-size: 87.5%;
+$font-size: 100%;
+$large-font-size: 125%;
+
+// The basic line height
+// - this is 125% of the $font-size
+// - see more http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/
+$line-height: 1.25;
+
+// The basic line height in EM
+// - it's derived from the $line-height property
+$gutter: 1.25em;
+
+
+  
+// Setting up the typographic grid based on the basic font
+@mixin typographic-grid {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+    
+  @include below-tablet {
+    font-size: $small-font-size;  
+  } 
+  
+  @include large-screen-and-up {
+    font-size: $large-font-size;  
+  }
+  
+  // - we have to add a $gutter to the top of screen to reset the typographic grid
+  // - otherwise we will have one row plus in the first text box (5 instead of just 4)
+  // - now we'll make also the lateral margin a $gutter, well suitable for mobiles. later this might be revisited
+  margin: $gutter;
+  height: calc(100% - #{$gutter} * 2); // since body is set to be fullscreen
+}
+
+
+
+// Headings
+// =======================================================================================================
+
+// - the basic idea is to fit headings to the typographic grid
+// - ie. the H1 should have the height of a single row, but it should fulfill the row
+// - this means responsively set headings for different devices
+// - heading sizes are taken from http://lamb.cc/typograph/ using the Le Corbusier / em settings
+
+$font-size-1: 1.3077em;
+$font-size-2: 1.6154em;
+$font-size-3: 2.1154em;
+$font-size-4: 2.6154em;
+$font-size-5: 3.4231em;
+$font-size-6: 4.2308em;
+
+@mixin h1 {
+  font-size: $font-size-5;
+  
+  @include below-tablet {
+    font-size: font-size-4;
+  }
+  
+  @include mobile {
+    font-size: font-size-3;
+  }
+}
+
+
+@mixin headings {
+  h1 {
+    @include h1;
+  }
+}
+
+
+
+
+// Basic typographic elements
+// =======================================================================================================
+
+
+@mixin basic-typographic-elements {
+  
+}
