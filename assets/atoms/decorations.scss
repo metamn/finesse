@@ -1,9 +1,69 @@
+// Animations
+// =======================================================================================================
+
+
+@mixin animation($content) {
+  @include experimental(animation, $content, -webkit, -moz, not -o, not -ms, official);
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+
+@include keyframes(beauty-on-frontpage) {
+  4% {
+    border-color: white white white $beauty;
+    background: $background;
+    color: $color;
+  } 
+  
+  8% {
+    border-color: $beauty white white $beauty;
+    background: $background;
+    color: $color;
+  } 
+  
+  12% {
+    border-color: $beauty $beauty white $beauty;
+    background: $background;
+    color: $color;
+  } 
+  
+  16% {
+    border-color: $beauty;
+    background: $background;
+    color: $color;
+  }
+  
+  100% { 
+    border-color: $beauty; 
+    background: $beauty;
+    color: $background;
+  }
+}
+
+
+
+// General mixins
+// =======================================================================================================
+
 @mixin hide-title {
   > h3 {
     display: none;
   }
 }
-
 
 
 @mixin basic-decorations {

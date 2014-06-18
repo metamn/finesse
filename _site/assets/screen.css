@@ -16,13 +16,41 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
+/* Center vertically or horizontally - http://davidwalsh.name/css-vertical-center 
+*/
+@-webkit-keyframes beauty-on-frontpage { 4% { border-color: white white white red; background: white; color: black; }
+  8% { border-color: red white white red; background: white; color: black; }
+  12% { border-color: red red white red; background: white; color: black; }
+  16% { border-color: red; background: white; color: black; }
+  100% { border-color: red; background: red; color: white; } }
+@-moz-keyframes beauty-on-frontpage { 4% { border-color: white white white red; background: white; color: black; }
+  8% { border-color: red white white red; background: white; color: black; }
+  12% { border-color: red red white red; background: white; color: black; }
+  16% { border-color: red; background: white; color: black; }
+  100% { border-color: red; background: red; color: white; } }
+@-ms-keyframes beauty-on-frontpage { 4% { border-color: white white white red; background: white; color: black; }
+  8% { border-color: red white white red; background: white; color: black; }
+  12% { border-color: red red white red; background: white; color: black; }
+  16% { border-color: red; background: white; color: black; }
+  100% { border-color: red; background: red; color: white; } }
+@keyframes beauty-on-frontpage { 4% { border-color: white white white red; background: white; color: black; }
+  8% { border-color: red white white red; background: white; color: black; }
+  12% { border-color: red red white red; background: white; color: black; }
+  16% { border-color: red; background: white; color: black; }
+  100% { border-color: red; background: red; color: white; } }
+/* Center vertically or horizontally - http://davidwalsh.name/css-vertical-center 
+*/
 html, body, .container, section { height: 100%; }
 
 html body { font-family: "Old Standard TT", serif; font-size: 100%; line-height: 1.25; margin: 1.25em; height: calc(100% - 1.25em * 2); }
 @media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
 html body section > h3, html body nav > h3 { display: none; }
-html body .intro p, html body .intro h1 { height: 6.25em; }
+html body.frontpage section.intro p, html body.frontpage section.intro h1 { text-align: center; position: relative; top: 50%; left: 50%; -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
+html body.frontpage section.intro h1 { font-size: 3.4231em; font-style: italic; margin-top: 1.28228em; }
+@media only screen and (max-width: 47.999em) { html body.frontpage section.intro h1 { font-size: font-size-4; } }
+@media only screen and (max-width: 30em) { html body.frontpage section.intro h1 { font-size: font-size-3; } }
+html body.frontpage section.intro p span { -webkit-animation: beauty-on-frontpage 3s forwards; -moz-animation: beauty-on-frontpage 3s forwards; animation: beauty-on-frontpage 3s forwards; border: 1px solid white; padding: 0.15625em 0.3125em; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }

@@ -52,25 +52,31 @@ $gutter: 1.25em;
 // - the basic idea is to fit headings to the typographic grid
 // - ie. the H1 should have the height of a single row, but it should fulfill the row
 // - this means responsively set headings for different devices
-// - heading sizes are taken from http://lamb.cc/typograph/ using the 4:7 Fibonacci / em settings
+// - heading sizes are taken from http://lamb.cc/typograph/ using the Le Corbusier / em settings
+
+$font-size-1: 1.3077em;
+$font-size-2: 1.6154em;
+$font-size-3: 2.1154em;
+$font-size-4: 2.6154em;
+$font-size-5: 3.4231em;
+$font-size-6: 4.2308em;
 
 @mixin h1 {
-  font-size: 4.4747em;
+  font-size: $font-size-5;
   
   @include below-tablet {
-    font-size: 2.6364em;
+    font-size: font-size-4;
   }
   
-  // - since this is the smallest Fibonacci value probably on mobile we will use modern headings, ie they won't differ by size but decoration 
   @include mobile {
-    font-size: 1.6364em;
+    font-size: font-size-3;
   }
 }
 
 
 @mixin headings {
   h1 {
-    //@include h1;
+    @include h1;
   }
 }
 

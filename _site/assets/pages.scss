@@ -4,14 +4,15 @@
 html {
   body {
     @include typographic-grid;
-    @include headings;
     @include basic-typographic-elements;
     @include basic-decorations;
     
-    .intro {
-      p, h1 {
-        @include rows(1);
-      }
+    &.frontpage {
+      section {
+        &.intro {
+          @include intro;
+        }
+      } 
     }
   }
 }

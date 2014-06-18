@@ -1,39 +1,19 @@
-@mixin article-beauty {
-  blockquote, span {
-    @include blockquote;
-    max-width: col(1);
-    margin: 0 auto;
+@mixin intro {
+  p, h1 {
+    text-align: center;
+    @include center;
+  }
+  
+  h1 {
+    @include h1;
+    font-style: italic;
+    margin-top: 1.28228em;
+  }
+  
+  p span {
+    @include animation(beauty-on-frontpage 3s forwards);
     
-    position: relative;
-    top: 0;
-  }
-  
-  blockquote {
-    dfn {
-      @include dfn;      
-      font-weight: 400;
-      font-style: normal;
-    }
-    
-    // cannot be moved to JS because of jsPlumb connecting the two 'beauty'-es
-    display: none;
-    &.active {
-      display: block;
-    }
-  }
-  
-  span {
-    display: block;
-    color: $beauty;
-    cursor: pointer;
-  }
-}
-
-
-@mixin article-intro {
-  @include rows(2);
-  
-  dfn {
-    @include dfn;
+    border: 1px solid white;
+    padding: $gutter/8 $gutter/4;
   }
 }
