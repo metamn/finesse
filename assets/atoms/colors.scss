@@ -1,10 +1,12 @@
+// check color contrast with: http://www.snook.ca/technical/colour_contrast/colour.html
+
 $background: #fff;
-$color: #000;
-$beauty: red;
+$color: #404040;
+$beauty: #FFB2B2;
 
 
 
-@mixin color($c: color, $b: $background, $padding: 0) {
+@mixin color($c: $color, $b: $background, $padding: 0) {
   color: $c;
   background: $b;
   padding: $padding;
