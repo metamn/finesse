@@ -23,25 +23,25 @@
 
 
 @include keyframes(beauty-on-frontpage) {
-  4% {
+  5% {
     border-color: white white white $beauty;
     background: $background;
     color: $color;
   } 
   
-  8% {
+  10% {
     border-color: $beauty white white $beauty;
     background: $background;
     color: $color;
   } 
   
-  12% {
+  15% {
     border-color: $beauty $beauty white $beauty;
     background: $background;
     color: $color;
   } 
   
-  16% {
+  20% {
     border-color: $beauty;
     background: $background;
     color: $color;
@@ -50,7 +50,6 @@
   100% { 
     border-color: $beauty; 
     background: $beauty;
-    color: $background;
   }
 }
 
@@ -67,6 +66,8 @@
 
 
 @mixin basic-decorations {
+  @include color;
+  
   section, nav {
     @include hide-title;
   }

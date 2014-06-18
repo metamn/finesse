@@ -18,31 +18,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Center vertically or horizontally - http://davidwalsh.name/css-vertical-center 
 */
-@-webkit-keyframes beauty-on-frontpage { 4% { border-color: white white white red; background: white; color: black; }
-  8% { border-color: red white white red; background: white; color: black; }
-  12% { border-color: red red white red; background: white; color: black; }
-  16% { border-color: red; background: white; color: black; }
-  100% { border-color: red; background: red; color: white; } }
-@-moz-keyframes beauty-on-frontpage { 4% { border-color: white white white red; background: white; color: black; }
-  8% { border-color: red white white red; background: white; color: black; }
-  12% { border-color: red red white red; background: white; color: black; }
-  16% { border-color: red; background: white; color: black; }
-  100% { border-color: red; background: red; color: white; } }
-@-ms-keyframes beauty-on-frontpage { 4% { border-color: white white white red; background: white; color: black; }
-  8% { border-color: red white white red; background: white; color: black; }
-  12% { border-color: red red white red; background: white; color: black; }
-  16% { border-color: red; background: white; color: black; }
-  100% { border-color: red; background: red; color: white; } }
-@keyframes beauty-on-frontpage { 4% { border-color: white white white red; background: white; color: black; }
-  8% { border-color: red white white red; background: white; color: black; }
-  12% { border-color: red red white red; background: white; color: black; }
-  16% { border-color: red; background: white; color: black; }
-  100% { border-color: red; background: red; color: white; } }
+@-webkit-keyframes beauty-on-frontpage { 5% { border-color: white white white #ffb2b2; background: white; color: #404040; }
+  10% { border-color: #ffb2b2 white white #ffb2b2; background: white; color: #404040; }
+  15% { border-color: #ffb2b2 #ffb2b2 white #ffb2b2; background: white; color: #404040; }
+  20% { border-color: #ffb2b2; background: white; color: #404040; }
+  100% { border-color: #ffb2b2; background: #ffb2b2; } }
+@-moz-keyframes beauty-on-frontpage { 5% { border-color: white white white #ffb2b2; background: white; color: #404040; }
+  10% { border-color: #ffb2b2 white white #ffb2b2; background: white; color: #404040; }
+  15% { border-color: #ffb2b2 #ffb2b2 white #ffb2b2; background: white; color: #404040; }
+  20% { border-color: #ffb2b2; background: white; color: #404040; }
+  100% { border-color: #ffb2b2; background: #ffb2b2; } }
+@-ms-keyframes beauty-on-frontpage { 5% { border-color: white white white #ffb2b2; background: white; color: #404040; }
+  10% { border-color: #ffb2b2 white white #ffb2b2; background: white; color: #404040; }
+  15% { border-color: #ffb2b2 #ffb2b2 white #ffb2b2; background: white; color: #404040; }
+  20% { border-color: #ffb2b2; background: white; color: #404040; }
+  100% { border-color: #ffb2b2; background: #ffb2b2; } }
+@keyframes beauty-on-frontpage { 5% { border-color: white white white #ffb2b2; background: white; color: #404040; }
+  10% { border-color: #ffb2b2 white white #ffb2b2; background: white; color: #404040; }
+  15% { border-color: #ffb2b2 #ffb2b2 white #ffb2b2; background: white; color: #404040; }
+  20% { border-color: #ffb2b2; background: white; color: #404040; }
+  100% { border-color: #ffb2b2; background: #ffb2b2; } }
 /* Center vertically or horizontally - http://davidwalsh.name/css-vertical-center 
 */
 html, body, .container, section { height: 100%; }
 
-html body { font-family: "Old Standard TT", serif; font-size: 100%; line-height: 1.25; margin: 1.25em; height: calc(100% - 1.25em * 2); }
+html body { font-family: "Old Standard TT", serif; font-size: 100%; line-height: 1.25; margin: 1.25em; height: calc(100% - 1.25em * 2); color: #404040; background: white; padding: 0; }
 @media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
 html body section > h3, html body nav > h3 { display: none; }
