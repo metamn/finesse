@@ -3,7 +3,7 @@
 
 
 // The basic font family
-$font-family: 'Lato', sans-serif;
+$font-family: 'Old Standard TT', serif;
 
 // The basic font-size
 // - the first rule of typography is to make the basic font perfectly readable 
@@ -36,6 +36,12 @@ $gutter: 1.25em;
   @include large-screen-and-up {
     font-size: $large-font-size;  
   }
+  
+  // - we have to add a $gutter to the top of screen to reset the typographic grid
+  // - otherwise we will have one row plus in the first text box (5 instead of just 4)
+  // - now we'll make also the lateral margin a $gutter, well suitable for mobiles. later this might be revisited
+  margin: $gutter;
+  height: calc(100% - #{$gutter} * 2); // since body is set to be fullscreen
 }
 
 
@@ -64,7 +70,7 @@ $gutter: 1.25em;
 
 @mixin headings {
   h1 {
-    @include h1;
+    //@include h1;
   }
 }
 
@@ -74,72 +80,7 @@ $gutter: 1.25em;
 // Basic typographic elements
 // =======================================================================================================
 
-@mixin p {
-  max-width: $text-width;
-}
-
-@mixin em {
-  font-style: italic;
-  font-weight: 300;
-}
-
-
-
-
-
-// Extended typographic elements
-// =======================================================================================================
-
-
-@mixin sub {
-  vertical-align: sub;
-}
-
-@mixin time {
-  font-variant: small-caps;
-  letter-spacing: 1px;
-}
-
-@mixin author {
-  font-variant: small-caps;
-  letter-spacing: 1px;
-  
-  &:before {
-    content: 'by ';
-    font-variant: normal;
-    @include em;
-  }
-}
-
-@mixin blockquote {
-  @include em;
-  @include h1;
-}
-
-@mixin dfn {
-  @include color($background, $beauty, 0 $gutter/8 $gutter/8);
-}
-
-
 
 @mixin basic-typographic-elements {
-  p {
-    @include p;
-  }
   
-  em {
-    @include em;
-  }
-  
-  author {
-    @include author;
-  }
-  
-  time {
-    @include time;
-  }
-  
-  sub {
-    @include sub;
-  }
 }

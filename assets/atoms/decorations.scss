@@ -3,3 +3,11 @@
     display: none;
   }
 }
+
+
+
+@mixin basic-decorations {
+  section, nav {
+    @include hide-title;
+  }
+}
