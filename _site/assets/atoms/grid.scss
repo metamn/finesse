@@ -99,10 +99,47 @@ $grid-height: $grid-cell-height;
 
 
 
+// Full screen mixins
+// =======================================================================================================
+
+@mixin full-screen {
+  html, body, .container, section {
+    height: 100%;
+  }
+}
+
+
+
 // General mixins
 // =======================================================================================================
+
+
+/* Center vertically or horizontally
+  - http://davidwalsh.name/css-vertical-center 
+*/
+@mixin center($direction: both) {
+  position: relative;
+  
+  @if ($direction == vertical) {
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
+  
+  @if ($direction == horizontal) {
+    left: 50%;
+    @include transform(translateX(-50%));
+  }
+  
+  @if ($direction == both) {
+    top: 50%;
+    left: 50%;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+}
 
 @mixin block {
   width: 100%;
   float: left;
 }
+
+
