@@ -1,22 +1,49 @@
 @mixin beauty {
   @include color($background, $color);
   
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  line-height: 2; 
+    
   .slideshow {
     @include slideshow;
     
     margin: 0 $gutter;
     max-width: $text-width;
-    @include center;
-    
-    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-    line-height: 2;
+    @include center; 
     
     .beauty {
       @include color($color, $beauty, $gutter/2 $gutter);
     }
     
     ul {
-      margin-left: $gutter;
+      display: none;
+    }
+  }
+  
+  #formula {
+    display: none;
+    &.active {
+      display: block;
+    }
+    
+    max-width: $text-width / 2;
+    @include center; 
+    
+    font-style: italic;
+    color: $beauty;
+    cursor: pointer;
+    
+    div {
+      padding: 0 $gutter/2;
+      text-align: center;
+      
+      span {
+        font-style: normal;
+      }
+      
+      &:nth-of-type(2) {
+        border-top: 1px solid;
+      }
     }
   }
   

@@ -18,6 +18,10 @@ $('document').ready(function() {
     var item = $('#beauty .slideshow blockquote').eq(index);
     navigate($(this));
     navigate(item);
+    
+    if (index == 2) {
+      $('#beauty #formula').addClass('active');
+    }
   });
   
   function navigate(item) {
