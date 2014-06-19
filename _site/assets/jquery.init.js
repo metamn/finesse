@@ -10,19 +10,28 @@ $('document').ready(function() {
   // Sliding through blockquotes in Beauty
   // -------------------------------------
   
-  $('.beauty span ').click(function() {
-    var item = $('.beauty blockquote.active');
-    item.removeClass('active');
-    
-    var next = item.next();
-    if (!(next.is('blockquote'))) {
-      next = $('.beauty blockquote').first();
-    } 
-    next.addClass('active');
+  $('#beauty .slideshow ul li').first().addClass('active');
+  $('#beauty .slideshow blockquote').first().addClass('active');
+  
+  $('#beauty .slideshow ul li').click(function() {
+    var index = $(this).index();
+    var item = $('#beauty .slideshow blockquote').eq(index);
+    navigate($(this));
+    navigate(item);
   });
   
+  function navigate(item) {
+    item.siblings().removeClass('active');
+    item.addClass('active');
+  }
   
-  // Slideing to a section
+  
+  
+  // Helpers
+  // ---------------------------------------
+  
+  
+  // Sliding to a section
   function slideTo(section, scroller, removeClass, addClass) {
     scrollTo(section);
     scroller.addClass(addClass);

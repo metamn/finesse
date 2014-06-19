@@ -1,0 +1,24 @@
+@mixin slideshow {
+  
+  blockquote {
+    min-height: row(1);
+    display: none;
+    
+    &.active {
+      display: block;
+    }
+  }
+  
+  ul {
+    @include list-inline;
+    
+    li {
+      font-size: larger;
+      cursor: pointer;
+      
+      &.active {
+        color: $beauty;
+      }
+    }
+  }
+}

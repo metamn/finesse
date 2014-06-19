@@ -1,7 +1,24 @@
 @mixin beauty {
   @include color($background, $color);
-  position: relative;
-  top: -$gutter;
+  
+  .slideshow {
+    @include slideshow;
+    
+    margin: 0 $gutter;
+    max-width: $text-width;
+    @include center;
+    
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    line-height: 2;
+    
+    .beauty {
+      @include color($color, $beauty, $gutter/2 $gutter);
+    }
+    
+    ul {
+      margin-left: $gutter;
+    }
+  }
   
   .arrow {
     @include center(horizontal);
@@ -27,14 +44,18 @@
     }
   }
   
-  opacity: 0;
-  @include animation(show-beauty-section 3s forwards);
-  @include experimental(animation-delay, 2s);
+  //position: relative;
+  //top: -$gutter;
+  //opacity: 0;
+  //@include animation(show-beauty-section 3s forwards);
+  //@include experimental(animation-delay, 2s);
 }
 
 
 
 @mixin intro {
+  display: none;
+  
   header {
     text-align: center;
     @include center;
