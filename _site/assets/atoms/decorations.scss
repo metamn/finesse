@@ -1,0 +1,88 @@
+// Animations
+// =======================================================================================================
+
+
+@include keyframes(show-beauty-section) {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@include keyframes(beauty-on-frontpage) {
+  10% {
+    border-color: white white white $beauty;
+    background: $background;
+    color: $color;
+  } 
+  
+  20% {
+    border-color: $beauty white white $beauty;
+    background: $background;
+    color: $color;
+  } 
+  
+  30% {
+    border-color: $beauty $beauty white $beauty;
+    background: $background;
+    color: $color;
+  } 
+  
+  40% {
+    border-color: $beauty;
+    background: $background;
+    color: $color;
+  }
+  
+  100% { 
+    border-color: $beauty; 
+    background: $beauty;
+  }
+}
+
+
+
+@mixin animation($animation1, $animation2: false, $animation3: false, $animation4: false, $animation5: false, $animation6: false, $animation7: false) {
+  $content: compact($animation1, $animation2, $animation3, $animation4, $animation5, $animation6, $animation7); 
+  @include experimental(animation, $content, -webkit, -moz, not -o, not -ms, official);
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+
+
+
+// General mixins
+// =======================================================================================================
+
+@mixin hide-title {
+  > h3 {
+    display: none;
+  }
+}
+
+
+@mixin basic-decorations {
+  @include color;
+  
+  section, nav {
+    @include hide-title;
+  }
+}

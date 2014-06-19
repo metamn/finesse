@@ -1,0 +1,22 @@
+
+@include full-screen;
+
+html {
+  body {
+    @include typographic-grid;
+    @include basic-typographic-elements;
+    @include basic-decorations;
+    
+    &.frontpage {
+      section {
+        &#intro {
+          @include intro;
+        }
+        
+        &#beauty {
+          @include beauty;
+        }
+      } 
+    }
+  }
+}
