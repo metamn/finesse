@@ -47,14 +47,13 @@ html body { font-family: "Old Standard TT", serif; font-size: 100%; line-height:
 @media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
 html body section > h3, html body nav > h3 { display: none; }
-html body.frontpage section#intro { display: none; }
 html body.frontpage section#intro header { text-align: center; position: relative; top: 50%; left: 50%; -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
 html body.frontpage section#intro p { margin-bottom: 1.25em; }
 html body.frontpage section#intro p span { border: 1px solid white; padding: 0.15625em 0.3125em; -webkit-animation: beauty-on-frontpage 3s forwards; -moz-animation: beauty-on-frontpage 3s forwards; animation: beauty-on-frontpage 3s forwards; -webkit-animation-delay: 1s; -moz-animation-delay: 1s; -ms-animation-delay: 1s; -o-animation-delay: 1s; animation-delay: 1s; }
 html body.frontpage section#intro h1 { font-size: 3.4231em; font-style: italic; }
 @media only screen and (max-width: 47.999em) { html body.frontpage section#intro h1 { font-size: font-size-4; } }
 @media only screen and (max-width: 30em) { html body.frontpage section#intro h1 { font-size: font-size-3; } }
-html body.frontpage section#beauty { color: white; background: #404040; padding: 0; }
+html body.frontpage section#beauty { color: white; background: #404040; padding: 0; position: relative; top: -1.25em; opacity: 0; -webkit-animation: show-beauty-section 3s forwards; -moz-animation: show-beauty-section 3s forwards; animation: show-beauty-section 3s forwards; -webkit-animation-delay: 2s; -moz-animation-delay: 2s; -ms-animation-delay: 2s; -o-animation-delay: 2s; animation-delay: 2s; }
 html body.frontpage section#beauty .slideshow { margin: 0 1.25em; max-width: 31.25em; position: relative; top: 50%; left: 50%; -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; line-height: 2; }
 html body.frontpage section#beauty .slideshow blockquote { min-height: 6.25em; display: none; }
 html body.frontpage section#beauty .slideshow blockquote.active { display: block; }

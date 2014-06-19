@@ -44,18 +44,16 @@
     }
   }
   
-  //position: relative;
-  //top: -$gutter;
-  //opacity: 0;
-  //@include animation(show-beauty-section 3s forwards);
-  //@include experimental(animation-delay, 2s);
+  position: relative;
+  top: -$gutter;
+  opacity: 0;
+  @include animation(show-beauty-section 3s forwards);
+  @include experimental(animation-delay, 2s);
 }
 
 
 
 @mixin intro {
-  display: none;
-  
   header {
     text-align: center;
     @include center;

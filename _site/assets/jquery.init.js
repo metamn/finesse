@@ -13,7 +13,7 @@ $('document').ready(function() {
   $('#beauty .slideshow ul li').first().addClass('active');
   $('#beauty .slideshow blockquote').first().addClass('active');
   
-  $('#beauty .slideshow ul li').click(function() {
+  $('#beauty .slideshow ul li').on('click', function() {
     var index = $(this).index();
     var item = $('#beauty .slideshow blockquote').eq(index);
     navigate($(this));
@@ -25,6 +25,14 @@ $('document').ready(function() {
     item.addClass('active');
   }
   
+  setInterval(function() {
+    var active = $('#beauty .slideshow ul li.active');
+    var next = active.next();
+    if (!next.length) {
+      next = $('#beauty .slideshow ul li').first();
+    }
+    next.trigger('click');
+  }, 5000);
   
   
   // Helpers
