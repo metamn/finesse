@@ -1,5 +1,13 @@
 $('document').ready(function() {
   
+  
+  // Play
+  $('#formula .arrow').click(function() {
+    var first = $('section.play').first();
+    first.addClass('active');
+    slideTo(first);
+  });
+  
   // Scrolling to the Beauty slide and up to the previous slide
   $('#beauty .arrow').click(function() {
     ($(this).hasClass('down')) ? slideTo($('#beauty'), $(this), 'down', 'top') : slideTo($('#intro'), $(this), 'top', 'down');
