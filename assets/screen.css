@@ -58,7 +58,7 @@ html body.frontpage section#beauty .slideshow { max-width: 31.25em; position: re
 html body.frontpage section#beauty .slideshow blockquote { display: none; }
 html body.frontpage section#beauty .slideshow blockquote.active { display: block; }
 html body.frontpage section#beauty .slideshow ul { margin: 0; }
-html body.frontpage section#beauty .slideshow ul li { display: inline-block; margin-right: 1.25em; }
+html body.frontpage section#beauty .slideshow ul li { display: inline-block; margin-right: 0.625em; }
 html body.frontpage section#beauty .slideshow ul li:last-of-type { margin-right: 0; }
 html body.frontpage section#beauty .slideshow ul li { font-size: larger; cursor: pointer; color: #7F7F7F; }
 html body.frontpage section#beauty .slideshow ul li.active { color: #ffb2b2; }

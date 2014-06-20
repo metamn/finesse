@@ -9,7 +9,7 @@
   }
   
   ul {
-    @include list-inline;
+    @include list-inline($gutter/2);
     
     li {
       font-size: larger;
