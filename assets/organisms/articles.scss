@@ -1,23 +1,21 @@
 @mixin beauty {
   @include color($background, $color);
-  
-  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-  line-height: 2; 
     
   .slideshow {
     @include slideshow;
     
-    margin: 0 $gutter;
     max-width: $text-width;
     @include center; 
+    text-align: center;
+    
+    
+    font-family: 'Lato', serif;
+    @include h1;
     
     .beauty {
-      @include color($color, $beauty, $gutter/2 $gutter);
+      color: $beauty;
     }
     
-    ul {
-      display: none;
-    }
   }
   
   #formula {

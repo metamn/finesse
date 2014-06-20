@@ -53,17 +53,18 @@ html body.frontpage section#intro p span { border: 1px solid white; padding: 0.1
 html body.frontpage section#intro h1 { font-size: 3.4231em; font-style: italic; }
 @media only screen and (max-width: 47.999em) { html body.frontpage section#intro h1 { font-size: font-size-4; } }
 @media only screen and (max-width: 30em) { html body.frontpage section#intro h1 { font-size: font-size-3; } }
-html body.frontpage section#beauty { color: white; background: #404040; padding: 0; font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; line-height: 2; position: relative; top: -1.25em; opacity: 0; -webkit-animation: show-beauty-section 3s forwards; -moz-animation: show-beauty-section 3s forwards; animation: show-beauty-section 3s forwards; -webkit-animation-delay: 2s; -moz-animation-delay: 2s; -ms-animation-delay: 2s; -o-animation-delay: 2s; animation-delay: 2s; }
-html body.frontpage section#beauty .slideshow { margin: 0 1.25em; max-width: 31.25em; position: relative; top: 50%; left: 50%; -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
-html body.frontpage section#beauty .slideshow blockquote { min-height: 6.25em; display: none; }
+html body.frontpage section#beauty { color: white; background: #404040; padding: 0; position: relative; top: -1.25em; opacity: 0; -webkit-animation: show-beauty-section 3s forwards; -moz-animation: show-beauty-section 3s forwards; animation: show-beauty-section 3s forwards; -webkit-animation-delay: 2s; -moz-animation-delay: 2s; -ms-animation-delay: 2s; -o-animation-delay: 2s; animation-delay: 2s; }
+html body.frontpage section#beauty .slideshow { max-width: 31.25em; position: relative; top: 50%; left: 50%; -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); text-align: center; font-family: 'Lato', serif; font-size: 3.4231em; }
+html body.frontpage section#beauty .slideshow blockquote { display: none; }
 html body.frontpage section#beauty .slideshow blockquote.active { display: block; }
 html body.frontpage section#beauty .slideshow ul { margin: 0; }
 html body.frontpage section#beauty .slideshow ul li { display: inline-block; margin-right: 1.25em; }
 html body.frontpage section#beauty .slideshow ul li:last-of-type { margin-right: 0; }
-html body.frontpage section#beauty .slideshow ul li { font-size: larger; cursor: pointer; }
+html body.frontpage section#beauty .slideshow ul li { font-size: larger; cursor: pointer; color: #7F7F7F; }
 html body.frontpage section#beauty .slideshow ul li.active { color: #ffb2b2; }
-html body.frontpage section#beauty .slideshow .beauty { color: #404040; background: #ffb2b2; padding: 0.625em 1.25em; }
-html body.frontpage section#beauty .slideshow ul { display: none; }
+@media only screen and (max-width: 47.999em) { html body.frontpage section#beauty .slideshow { font-size: font-size-4; } }
+@media only screen and (max-width: 30em) { html body.frontpage section#beauty .slideshow { font-size: font-size-3; } }
+html body.frontpage section#beauty .slideshow .beauty { color: #ffb2b2; }
 html body.frontpage section#beauty #formula { display: none; max-width: 15.625em; position: relative; top: 50%; left: 50%; -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); font-style: italic; color: #ffb2b2; cursor: pointer; }
 html body.frontpage section#beauty #formula.active { display: block; }
 html body.frontpage section#beauty #formula div { padding: 0 0.625em; text-align: center; }
