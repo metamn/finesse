@@ -10,19 +10,40 @@ $('document').ready(function() {
   // Sliding through blockquotes in Beauty
   // -------------------------------------
   
-  $('.beauty span ').click(function() {
-    var item = $('.beauty blockquote.active');
-    item.removeClass('active');
+  $('#beauty .slideshow ul li').first().addClass('active');
+  $('#beauty .slideshow blockquote').first().addClass('active');
+  
+  $('#beauty .slideshow ul li').on('click', function() {
+    var index = $(this).index();
+    var item = $('#beauty .slideshow blockquote').eq(index);
+    navigate($(this));
+    navigate(item);
     
-    var next = item.next();
-    if (!(next.is('blockquote'))) {
-      next = $('.beauty blockquote').first();
-    } 
-    next.addClass('active');
+    if (index == 2) {
+      $('#beauty #formula').addClass('active');
+    }
   });
   
+  function navigate(item) {
+    item.siblings().removeClass('active');
+    item.addClass('active');
+  }
   
-  // Slideing to a section
+  setInterval(function() {
+    var active = $('#beauty .slideshow ul li.active');
+    var next = active.next();
+    if (!next.length) {
+      next = $('#beauty .slideshow ul li').first();
+    }
+    next.trigger('click');
+  }, 5000);
+  
+  
+  // Helpers
+  // ---------------------------------------
+  
+  
+  // Sliding to a section
   function slideTo(section, scroller, removeClass, addClass) {
     scrollTo(section);
     scroller.addClass(addClass);

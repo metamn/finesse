@@ -36,12 +36,6 @@ $gutter: 1.25em;
   @include large-screen-and-up {
     font-size: $large-font-size;  
   }
-  
-  // - we have to add a $gutter to the top of screen to reset the typographic grid
-  // - otherwise we will have one row plus in the first text box (5 instead of just 4)
-  // - now we'll make also the lateral margin a $gutter, well suitable for mobiles. later this might be revisited
-  margin: $gutter;
-  height: calc(100% - #{$gutter} * 2); // since body is set to be fullscreen
 }
 
 
