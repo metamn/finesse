@@ -16,6 +16,14 @@ html {
         &#beauty {
           @include beauty;
         }
+        
+        &#formula {
+          @include formula;
+        }
+        
+        &.play {
+          @include play;
+        }
       } 
     }
   }

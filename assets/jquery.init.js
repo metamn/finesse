@@ -1,5 +1,13 @@
 $('document').ready(function() {
   
+  
+  // Play
+  $('#formula .arrow').click(function() {
+    var first = $('section.play').first();
+    first.addClass('active');
+    slideTo(first);
+  });
+  
   // Scrolling to the Beauty slide and up to the previous slide
   $('#beauty .arrow').click(function() {
     ($(this).hasClass('down')) ? slideTo($('#beauty'), $(this), 'down', 'top') : slideTo($('#intro'), $(this), 'top', 'down');
@@ -20,7 +28,11 @@ $('document').ready(function() {
     navigate(item);
     
     if (index == 2) {
-      $('#beauty #formula').addClass('active');
+      var scroll = $('#formula').hasClass('active');
+      $('#formula').addClass('active');
+      if (!scroll) {
+        scrollTo($('#beauty .reveal-formula'));
+      }
     }
   });
   
@@ -37,6 +49,7 @@ $('document').ready(function() {
     }
     next.trigger('click');
   }, 5000);
+  
   
   
   // Helpers
