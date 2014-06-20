@@ -1,5 +1,49 @@
 @mixin beauty {
   @include color($background, $color);
+    
+  .slideshow {
+    @include slideshow;
+    
+    max-width: $text-width;
+    @include center; 
+    text-align: center;
+    
+    
+    font-family: 'Lato', serif;
+    @include h1;
+    
+    .beauty {
+      color: $beauty;
+    }
+    
+  }
+  
+  #formula {
+    display: none;
+    &.active {
+      display: block;
+    }
+    
+    max-width: $text-width / 2;
+    @include center; 
+    
+    font-style: italic;
+    color: $beauty;
+    cursor: pointer;
+    
+    div {
+      padding: 0 $gutter/2;
+      text-align: center;
+      
+      span {
+        font-style: normal;
+      }
+      
+      &:nth-of-type(2) {
+        border-top: 1px solid;
+      }
+    }
+  }
   
   .arrow {
     @include center(horizontal);
@@ -25,9 +69,11 @@
     }
   }
   
+  position: relative;
+  top: -$gutter;
   opacity: 0;
   @include animation(show-beauty-section 3s forwards);
-  @include experimental(animation-delay, 1s);
+  @include experimental(animation-delay, 2s);
 }
 
 
@@ -45,6 +91,7 @@
       padding: $gutter/8 $gutter/4;
       
       @include animation(beauty-on-frontpage 3s forwards);
+      @include experimental(animation-delay, 1s);
     }
   }
   
