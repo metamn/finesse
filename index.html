@@ -17,7 +17,6 @@ layout: frontpage
   
   {% include atoms/arrows.html orientation='down' color="-white" title="Beauty" %}
   
-  <span class="reveal-formula"></span>
   
   {% capture slideshow %}
     <blockquote>
@@ -33,7 +32,7 @@ layout: frontpage
     </blockquote>
   {% endcapture %}
   
-  {% include molecules/slideshow.html id="beauty-slideshow" content=slideshow item="blockquote" %}
+  {% include molecules/slideshow.html id="beauty-slideshow" content=slideshow item="blockquote" navigator="&mdash;" autoscroll="auto-scroll" %}
 </section>
 
 

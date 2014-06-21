@@ -1,5 +1,7 @@
-<nav id="{{ include.id }}" class="slideshow" data-item="{{ include.item }}">
+<nav id="{{ include.id }}" class="slideshow" data-item="{{ include.item }}" data-navigator="{{ include.navigator }}" data-autoscroll="{{ include.autoscroll }}">
   <h3>Slideshow</h3>
   
   {{ include.content }}
+  
+  {{ # the navigation list will be added by jQuery }}
 </nav>

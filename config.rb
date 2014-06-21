@@ -3,10 +3,10 @@ require 'sass-globbing'
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "assets"
-sass_dir = "assets"
-images_dir = "assets"
-javascripts_dir = "assets"
+css_dir = "assets/styles"
+sass_dir = "assets/styles"
+images_dir = "assets/images"
+javascripts_dir = "assets/scripts"
 fonts_dir = "assets"
 
 # You can select your preferred output style here (can be overridden via the command line):
