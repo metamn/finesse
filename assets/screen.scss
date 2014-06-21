@@ -8,15 +8,15 @@
 @import "compass/css3/shared";
 
 
-@import "atoms/grid";
+@import "atoms/layout";
 @import "atoms/typography";
 @import "atoms/*";
 @import "molecules/*";
 @import "organisms/*";
+@import "structures";
 @import "pages";
 
-@import "visual-grid";
-#grid, #gravity { display: none; }
+
 
 
 

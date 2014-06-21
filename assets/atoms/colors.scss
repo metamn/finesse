@@ -7,8 +7,11 @@ $dark-grey: #7F7F7F;
 
 
 
-@mixin color($c: $color, $b: $background, $padding: 0) {
+@mixin color($c: $color, $b: $background, $padding: false) {
   color: $c;
   background: $b;
-  padding: $padding;
+  
+  @if ($padding != false) {
+    padding: $padding;
+  }
 }
