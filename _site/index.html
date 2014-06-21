@@ -1,6 +1,33 @@
----
-layout: frontpage
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <title> / finesse</title> 
+    
+    <!-- Compass with SASS -->
+  	<link href="/assets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    
+    <!--[if lt IE 9]>
+        <link href="/assets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="/assets/html5shiv.js"></script>
+    <![endif]-->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    
+    <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700|Lato:100' rel='stylesheet' type='text/css'>
+  </head>
+  
+  <body class=" frontpage">
+    <div class="container">
+    
+    
+
 
 <section id="intro">
   <h3>Intro</h3>
@@ -17,7 +44,7 @@ layout: frontpage
   <h3>Beauty</h3>
   
   <span class="arrow down">
-    <img src="{{ site.url }}/assets/images/arrow-white.png" alt="Beauty">
+    <img src="/assets/images/arrow-white.png" alt="Beauty">
   </span>
   
   <span class="reveal-formula"></span>
@@ -55,7 +82,7 @@ layout: frontpage
   </div>
   
   <div class="arrow right">
-    play <img src="{{ site.url }}/assets/images/arrow.png" alt="Start Playing">
+    play <img src="/assets/images/arrow.png" alt="Start Playing">
   </div>
   
   <div class="play">
@@ -103,3 +130,27 @@ layout: frontpage
     </ul>
   </nav>
 </section>
+
+
+</div>
+
+
+<!-- jQuery from CDN and local fallback -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('/assets/jquery-1.10.2.min.js">\x3C/script>')</script>
+
+<!-- jsPlumb
+<script src="/assets/jquery.jsPlumb-1.6.2-min.js"></script>
+-->
+
+<!-- Site specific scripts  -->
+<script src="/assets/jquery.init.js"></script>
+
+<script>
+  var elements = '[{"id" : "header", "type" : "text"},{"id" : ".intro", "type" : "text"},{"id" : ".beauty", "type" : "image"}]';
+</script>
+
+<!-- the visual grid -->
+<script type="text/javascript" src="/assets/jquery.visual.grid.js"></script>
+</body>
+</html>
