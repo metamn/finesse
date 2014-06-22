@@ -1,11 +1,13 @@
 /*
 Syntax error: Undefined mixin 'keyframes'.
-        on line 17 of /home/cs/work/finesse/assets/styles/molecules/animations.scss, in `keyframes'
-        from line 17 of /home/cs/work/finesse/assets/styles/molecules/animations.scss
+        on line 6 of /home/cs/work/finesse/assets/styles/molecules/animations.scss, in `keyframes'
+        from line 6 of /home/cs/work/finesse/assets/styles/molecules/animations.scss
+
+1: /home/cs/work/finesse/assets/styles/molecules/animations.scss
 
 Backtrace:
-/home/cs/work/finesse/assets/styles/molecules/animations.scss:17:in `keyframes'
-/home/cs/work/finesse/assets/styles/molecules/animations.scss:17
+/home/cs/work/finesse/assets/styles/molecules/animations.scss:6:in `keyframes'
+/home/cs/work/finesse/assets/styles/molecules/animations.scss:6
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:98:in `block in with_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.0.rc.3/lib/sass/stack.rb:115:in `with_frame'
@@ -62,4 +64,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'keyframes'.\A         on line 17 of /home/cs/work/finesse/assets/styles/molecules/animations.scss, in `keyframes'\A         from line 17 of /home/cs/work/finesse/assets/styles/molecules/animations.scss"; }
+  content: "Syntax error: Undefined mixin 'keyframes'.\A         on line 6 of /home/cs/work/finesse/assets/styles/molecules/animations.scss, in `keyframes'\A         from line 6 of /home/cs/work/finesse/assets/styles/molecules/animations.scss\A \A 1: /home/cs/work/finesse/assets/styles/molecules/animations.scss"; }

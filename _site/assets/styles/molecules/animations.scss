@@ -1,19 +1,8 @@
-@mixin animation-show-beauty-section {
-  top: -$gutter;
+@mixin animation-intro-section-navbar {
   opacity: 0;
   @include animation(show 3s forwards);
-  @include experimental(animation-delay, 2s);
+  @include experimental(animation-delay, 1s);
 }
-
-
-
-
-@mixin animation-show-arrow {
-  opacity: 0;
-  @include animation(show 3s forwards);
-  @include experimental(animation-delay, 3s);
-}
-
 @include keyframes(show) {
   0% {
     opacity: 0;
@@ -30,12 +19,12 @@
 
 
 
-@mixin animation-beauty-on-frontpage {
-  @include animation(beauty-on-frontpage 3s forwards);
+@mixin animation-intro-beauty {
+  @include animation(intro-beauty 3s forwards);
   @include experimental(animation-delay, 1s);
 }
 
-@include keyframes(beauty-on-frontpage) {
+@include keyframes(intro-beauty) {
   10% {
     border-color: $background $background $background $beauty;
     background: $background;

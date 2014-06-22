@@ -1,5 +1,6 @@
-@mixin slideshow {
-  
+
+
+@mixin slideshow {  
   blockquote {
     display: none;
     
@@ -19,6 +20,30 @@
       &.active {
         color: $beauty;
       }
+    }
+  }
+}
+
+
+@mixin section-navbar($colorscheme: normal) {
+  @include block;
+  position: absolute;
+  bottom: 0;
+  height: $gutter;
+  
+  @if ($colorscheme == normal) {
+    background: $background;
+    
+    .arrow {
+      @include arrow-for-section-navbar($background);
+    } 
+  }
+  
+  @if ($colorscheme == inverted) {
+    background: $color;
+    
+    .arrow {
+      @include arrow-for-section-navbar($color);
     }
   }
 }

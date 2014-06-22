@@ -1,4 +1,13 @@
-
+@mixin arrow-for-section-navbar($c) {
+  @include arrow(down);
+  @include circle($c);
+  
+  @include center(horizontal);
+  position: absolute;
+  top: - $gutter/2;
+  
+  cursor: pointer;
+}
 
 
 @mixin intro-beauty {

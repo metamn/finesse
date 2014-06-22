@@ -10,7 +10,7 @@ layout: frontpage
     responsive storytelling 
   </h1>
   
-  {% include atoms/arrow.html orientation='down' icon="arrow-white" title="Scroll to next slide" %}
+  {% include molecules/section-navbar.html icon="arrow-white" %}
 </header>
 
 
@@ -30,10 +30,9 @@ layout: frontpage
       <span>beauty</span> is oneness and diversity in harmony.
     </blockquote>
   {% endcapture %}
-  
   {% include molecules/slideshow.html id="beauty-slideshow" content=slideshow item="blockquote" navigator="&mdash;" autoscroll="auto-scroll" %}
   
-  {% include atoms/arrow.html orientation='down' icon="arrow" title="Scroll to next slide" %}
+  {% include molecules/section-navbar.html icon="arrow" %}
 </section>
 
 
