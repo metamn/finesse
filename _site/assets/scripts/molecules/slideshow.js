@@ -1,4 +1,6 @@
-// add a navigation list to every slideshow
+// Slideshow
+
+
 $('.slideshow').each(function() {
   // which items define the slideshow
   var item_id = $(this).attr('data-item');

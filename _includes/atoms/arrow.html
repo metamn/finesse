@@ -1,0 +1,6 @@
+{% assign _svg = include.icon | append: '.svg' %}
+{% assign _png = include.icon | append: '.png' %}
+
+<span class="arrow {{ include.orientation }}">
+  {% include atoms/icon.html svg=_svg png=_png title=include.title %}
+</span>

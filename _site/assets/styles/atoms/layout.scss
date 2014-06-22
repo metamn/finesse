@@ -105,6 +105,7 @@ $grid-height: $grid-cell-height;
 @mixin full-screen {
   html, body, .container, section {
     height: 100%;
+    position: relative;
   }
 }
 

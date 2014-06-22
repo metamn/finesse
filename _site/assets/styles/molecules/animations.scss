@@ -1,0 +1,67 @@
+@mixin animation-show-beauty-section {
+  top: -$gutter;
+  opacity: 0;
+  @include animation(show 3s forwards);
+  @include experimental(animation-delay, 2s);
+}
+
+
+
+
+@mixin animation-show-arrow {
+  opacity: 0;
+  @include animation(show 3s forwards);
+  @include experimental(animation-delay, 3s);
+}
+
+@include keyframes(show) {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+@mixin animation-beauty-on-frontpage {
+  @include animation(beauty-on-frontpage 3s forwards);
+  @include experimental(animation-delay, 1s);
+}
+
+@include keyframes(beauty-on-frontpage) {
+  10% {
+    border-color: $background $background $background $beauty;
+    background: $background;
+    color: $color;
+  } 
+  
+  20% {
+    border-color: $beauty $background $background $beauty;
+    background: $background;
+    color: $color;
+  } 
+  
+  30% {
+    border-color: $beauty $beauty $background $beauty;
+    background: $background;
+    color: $color;
+  } 
+  
+  40% {
+    border-color: $beauty;
+    background: $background;
+    color: $color;
+  }
+  
+  100% { 
+    border-color: $beauty; 
+    background: $beauty;
+  }
+}

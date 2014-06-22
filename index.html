@@ -9,14 +9,13 @@ layout: frontpage
   <h1>
     responsive storytelling 
   </h1>
+  
+  {% include atoms/arrow.html orientation='down' icon="arrow-white" title="Scroll to next slide" %}
 </header>
 
 
 <section id="beauty">
   <h3>Beauty</h3>
-  
-  {% include atoms/arrows.html orientation='down' color="-white" title="Beauty" %}
-  
   
   {% capture slideshow %}
     <blockquote>
@@ -33,6 +32,8 @@ layout: frontpage
   {% endcapture %}
   
   {% include molecules/slideshow.html id="beauty-slideshow" content=slideshow item="blockquote" navigator="&mdash;" autoscroll="auto-scroll" %}
+  
+  {% include atoms/arrow.html orientation='down' icon="arrow" title="Scroll to next slide" %}
 </section>
 
 

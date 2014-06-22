@@ -1,7 +1,9 @@
+
+
+
 @mixin intro-beauty {
   border: 1px solid white;
   padding: $gutter/8 $gutter/4;
-  
-  @include animation(beauty-on-frontpage 3s forwards);
-  @include experimental(animation-delay, 1s);
 }
+
+

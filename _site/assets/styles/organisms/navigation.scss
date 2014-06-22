@@ -1,0 +1,11 @@
+@mixin arrow-slider($orientation, $c) {
+  @include arrow($orientation);
+  @include circle($c);
+  
+  @include center(horizontal);
+  position: absolute;
+  bottom: -$gutter/2;
+  z-index: 1;
+  
+  cursor: pointer;
+}
