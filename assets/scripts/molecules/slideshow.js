@@ -52,6 +52,8 @@ function slideshowClick(slideshow, item_id) {
     var item = slideshow.children(item_id).eq(index);
     slideshowNavigate($(this));
     slideshowNavigate(item);
+    
+    slideshow.trigger('slideshowItemClicked', [index]);
   });
 }
 

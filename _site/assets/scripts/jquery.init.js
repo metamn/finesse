@@ -9,48 +9,23 @@ $('document').ready(function() {
   
   
   // Slideshow
+ 
+  // Show slide navigator on the Beauty slide
+  $('#beauty-slideshow').bind('slideshowItemClicked', function(event, item) { 
+    if (item == 2) {
+      $('#beauty .navbar').addClass('active'); 
+    }
+  });
+  
   $.getScript('assets/scripts/molecules/slideshow.js');
   
   
-  
-  // Scrolling between sections
-  $.getScript('assets/scripts/atoms/scrollToSlide.js');
-  
-  
-  // Check if the arrow must be show again
-function showNavigationArrow() {
-  var arrow = $('.arrow.top');
-  if (isElementInViewport(arrow)) {
-    arrow.removeClass('top');
-    arrow.addClass('bottom');
-  }
-}
-
-$(window).on('DOMContentLoaded load resize scroll', showNavigationArrow); 
-
-
-
-function isElementInViewport (el) {
-  
-  //special bonus for those using jQuery
-  if (el instanceof jQuery) {
-    el = el[0];
-  }
-
-  var rect = el.getBoundingClientRect();
-
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
-  );
-}
+  // Scrolling down to a slide
+  $.getScript('assets/scripts/molecules/section-navbar.js');
   
   
   // Helpers
   // ---------------------------------------
-  
   
   // Scrolling to a div
   $.getScript('assets/scripts/atoms/scrollTo.js');

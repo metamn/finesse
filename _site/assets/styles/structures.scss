@@ -127,6 +127,7 @@
   
   .navbar {
     @include section-navbar;
+    @include animation-beauty-section-navbar;
   }
 }
 

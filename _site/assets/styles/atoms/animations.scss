@@ -1,3 +1,22 @@
+// Common animations
+// ===================================================================================
+
+@include keyframes(show) {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+// Helpers
+// ===================================================================================
+
 @mixin animation($animation1, $animation2: false, $animation3: false, $animation4: false, $animation5: false, $animation6: false, $animation7: false) {
   $content: compact($animation1, $animation2, $animation3, $animation4, $animation5, $animation6, $animation7); 
   @include experimental(animation, $content, -webkit, -moz, not -o, not -ms, official);
