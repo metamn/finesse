@@ -1,4 +1,4 @@
-@mixin animation-beauty-section-navbar {
+@mixin animation-quotes-navbar {
   opacity: 0;
   
   &.active {
@@ -7,7 +7,7 @@
 }
 
 
-@mixin animation-intro-section-navbar {
+@mixin animation-intro-navbar {
   opacity: 0;
   @include animation(show 3s forwards);
   @include experimental(animation-delay, 1s);
@@ -15,38 +15,25 @@
 
 
 
-@mixin animation-intro-beauty {
-  @include animation(intro-beauty 3s forwards);
-  @include experimental(animation-delay, 1s);
+@mixin animation-beauty($duration, $delay) {
+  @include animation(beauty $duration);
+  @include experimental(animation-delay, $delay);
 }
 
-@include keyframes(intro-beauty) {
+@include keyframes(beauty) {
   10% {
-    border-color: $background $background $background $beauty;
-    background: $background;
-    color: $color;
+    border-color: $background $background $background $color;
+  } 
+  
+  15% {
+    border-color: $color $background $background $color;
   } 
   
   20% {
-    border-color: $beauty $background $background $beauty;
-    background: $background;
-    color: $color;
+    border-color: $color $color $background $color;
   } 
   
-  30% {
-    border-color: $beauty $beauty $background $beauty;
-    background: $background;
-    color: $color;
-  } 
-  
-  40% {
-    border-color: $beauty;
-    background: $background;
-    color: $color;
-  }
-  
-  100% { 
-    border-color: $beauty; 
-    background: $beauty;
+  25% {
+    border-color: $color;
   }
 }

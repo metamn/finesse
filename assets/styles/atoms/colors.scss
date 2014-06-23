@@ -3,8 +3,21 @@
 $background: #fff;
 $color: #404040;
 $beauty: #FFB2B2;
-$dark-grey: #7F7F7F;
 
+// coming from $color, to be used on $background
+$dark-grey: #676F73;
+
+
+// verified combinations (background, color)
+// - $background, $color
+// - $color, $background
+// - $beauty, $color
+// - background, $dark-grey
+
+
+// failing combinations
+// - $background, $beauty
+// - $beauty, $background
 
 
 @mixin color($c: $color, $b: $background, $padding: false) {
