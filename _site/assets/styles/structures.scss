@@ -1,19 +1,26 @@
 
 
 @mixin formula-slide {
-  .formula {
-    @include formula;
-  }
   
-  .button {
-    @include to-centre($text-width/2);
-    @include button;
-    margin-top: $gutter*2;
+  .to-center {
+    @include center;
+    max-width: $text-width;
+    
+    .formula {
+      @include center(horizontal);
+      @include formula;
+    }
+    
+    .button {
+      @include button;
+      margin-top: $gutter*4;
+    }
   }
   
   .notes {
     @include notes;
   }
+  
   
   display: none;
   &.active {
@@ -51,20 +58,20 @@
   height: 100%;
   position: relative;
   
-  .intro {
+  .to-center {
     @include center;
-  }
-  
-  p {
-    span {
-      @include intro-beauty;
-      @include animation-intro-beauty;
+    
+    p {
+      span {
+        @include intro-beauty;
+        @include animation-intro-beauty;
+      }
     }
-  }
-  
-  h1 {
-    @include h1;
-    font-style: italic;
+    
+    h1 {
+      @include h1;
+      font-style: italic;
+    }
   }
   
   .navbar {

@@ -1,16 +1,16 @@
 @mixin notes {
-  @include block;
-  text-align: center;
+  @include center(horizontal);
+  max-width: $text-width;
   
   position: absolute;
-  bottom: $gutter;
+  bottom: $gutter*2;
   
   color: $dark-grey;
   font-size: smaller;
 }
 
 @mixin formula {
-  @include to-centre($text-width/2);
+  max-width: $text-width/2;
   
   font-style: italic;
   
