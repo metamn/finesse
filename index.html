@@ -3,7 +3,7 @@ layout: frontpage
 ---
 
 <header id="intro">
-  <div class="intro">
+  <div class="to-center">
     <p>
       finding the <span>beauty</span> in
     </p>
@@ -41,8 +41,10 @@ layout: frontpage
 <section id="formula">
   <h3>Formula</h3>
   
-  {% include molecules/formula.html %}
-  {% include molecules/button.html text="play" %}
+  <div class="to-center">
+    {% include molecules/formula.html %}
+    {% include molecules/button.html text="play" %}
+  </div> 
   
   <div class="notes">
     <p>
@@ -51,5 +53,5 @@ layout: frontpage
     <p>
       Tap the screen to check if they meet, or not, the formula of beauty.
     </p>
-  </div> 
+  </div>
 </section>
