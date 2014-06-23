@@ -1,7 +1,6 @@
 
 
-@mixin formula-slide {
-  
+@mixin play {
   .to-center {
     @include center;
     max-width: $text-width;
@@ -21,16 +20,14 @@
     @include notes;
   }
   
-  
   display: none;
   &.active {
     display: block;
-    @include animation(show 3s);
   }
 }
 
 
-@mixin beauty {
+@mixin quotes {
   @include color($background, $color);
     
   .slideshow {
@@ -48,7 +45,7 @@
   
   .navbar {
     @include section-navbar;
-    @include animation-beauty-section-navbar;
+    @include animation-quotes-navbar;
   }
 }
 
@@ -63,8 +60,8 @@
     
     p {
       span {
-        @include intro-beauty;
-        @include animation-intro-beauty;
+        @include beauty($gutter $gutter/2 - $gutter/8, $gutter*2);
+        @include animation-beauty(1s, 1s);
       }
     }
     
@@ -76,6 +73,6 @@
   
   .navbar {
     @include section-navbar(inverted);
-    @include animation-intro-section-navbar;
+    @include animation-intro-navbar;
   }
 }

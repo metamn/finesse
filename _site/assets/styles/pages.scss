@@ -20,12 +20,12 @@ html {
       }
         
       section {
-        &#beauty {
-          @include beauty;
+        &#quotes {
+          @include quotes;
         }
         
-        &#formula {
-          @include formula-slide;
+        &#play {
+          @include play;
         }
         
       } 

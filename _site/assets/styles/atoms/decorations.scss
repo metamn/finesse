@@ -1,7 +1,6 @@
-@mixin circle($c) {
-  background: $c;
-  padding: $gutter/2 - $gutter/8 $gutter/2;
-  @include border-radius($gutter);
+@mixin circle($pad, $radius) {
+  padding: $pad;
+  @include border-radius($radius);
 }
 
 

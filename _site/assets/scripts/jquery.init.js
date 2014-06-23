@@ -13,8 +13,8 @@ $('document').ready(function() {
   // Show slide navigator on the Beauty slide
   $('#beauty-slideshow').bind('slideshowItemClicked', function(event, item) { 
     if (item == 2) {
-      $('#beauty .navbar').addClass('active'); 
-      $('#formula').addClass('active');
+      $('#quotes .navbar').addClass('active'); 
+      $('#play').addClass('active');
     }
   });
   
