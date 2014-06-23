@@ -1,0 +1,12 @@
+@mixin list-inline($margin: $gutter) {
+  margin: 0;
+  
+  li {
+    display: inline-block;
+    margin-right: $margin;
+    
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
