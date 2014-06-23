@@ -19,6 +19,11 @@
   .notes {
     @include notes;
   }
+  
+  display: none;
+  &.active {
+    display: block;
+  }
 }
 
 
@@ -55,8 +60,8 @@
     
     p {
       span {
-        @include beauty;
-        @include animation-beauty;
+        @include beauty($gutter $gutter/2 - $gutter/8, $gutter*2);
+        @include animation-beauty(1s, 1s);
       }
     }
     

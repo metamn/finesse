@@ -15,9 +15,9 @@
 
 
 
-@mixin animation-beauty {
-  @include animation(beauty 1s forwards);
-  @include experimental(animation-delay, 1s);
+@mixin animation-beauty($duration, $delay) {
+  @include animation(beauty $duration);
+  @include experimental(animation-delay, $delay);
 }
 
 @include keyframes(beauty) {
