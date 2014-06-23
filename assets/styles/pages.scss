@@ -1,0 +1,34 @@
+
+
+@import "visual-grid";
+#grid, #gravity { display: none; }
+
+
+
+
+@include full-screen;
+
+html {
+  body {
+    @include typographic-grid;
+    @include basic-typographic-elements;
+    @include basic-decorations;
+    
+    &.frontpage {
+      header {
+        @include intro;
+      }
+        
+      section {
+        &#beauty {
+          @include beauty;
+        }
+        
+        &#formula {
+          @include formula-slide;
+        }
+        
+      } 
+    }
+  }
+}

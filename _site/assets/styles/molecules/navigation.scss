@@ -1,0 +1,67 @@
+@mixin button {
+  @include arrow(right, $gutter/2);
+  
+  border: 1px solid $dark-grey;
+  @include border-radius($gutter/4);
+  padding: $gutter/2 $gutter;
+  
+  font-size: smaller;
+  cursor: pointer;
+  
+  img {
+    position: relative;
+    top: 1px;
+  }
+  
+  &:hover {
+    border: 2px solid $color;
+  }
+}
+
+@mixin slideshow {  
+  blockquote {
+    display: none;
+    
+    &.active {
+      display: block;
+    }
+  }
+  
+  ul {
+    @include list-inline($gutter/2);
+    
+    li {
+      font-size: larger;
+      cursor: pointer;
+      color: #7F7F7F;
+      
+      &.active {
+        color: $beauty;
+      }
+    }
+  }
+}
+
+
+@mixin section-navbar($colorscheme: normal) {
+  @include block;
+  position: absolute;
+  bottom: 0;
+  height: $gutter;
+  
+  @if ($colorscheme == normal) {
+    background: $background;
+    
+    .arrow {
+      @include arrow-for-section-navbar($background);
+    } 
+  }
+  
+  @if ($colorscheme == inverted) {
+    background: $color;
+    
+    .arrow {
+      @include arrow-for-section-navbar($color);
+    }
+  }
+}

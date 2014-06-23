@@ -1,0 +1,52 @@
+@mixin animation-beauty-section-navbar {
+  opacity: 0;
+  
+  &.active {
+    @include animation(show 3s forwards);
+  }
+}
+
+
+@mixin animation-intro-section-navbar {
+  opacity: 0;
+  @include animation(show 3s forwards);
+  @include experimental(animation-delay, 1s);
+}
+
+
+
+@mixin animation-intro-beauty {
+  @include animation(intro-beauty 3s forwards);
+  @include experimental(animation-delay, 1s);
+}
+
+@include keyframes(intro-beauty) {
+  10% {
+    border-color: $background $background $background $beauty;
+    background: $background;
+    color: $color;
+  } 
+  
+  20% {
+    border-color: $beauty $background $background $beauty;
+    background: $background;
+    color: $color;
+  } 
+  
+  30% {
+    border-color: $beauty $beauty $background $beauty;
+    background: $background;
+    color: $color;
+  } 
+  
+  40% {
+    border-color: $beauty;
+    background: $background;
+    color: $color;
+  }
+  
+  100% { 
+    border-color: $beauty; 
+    background: $beauty;
+  }
+}

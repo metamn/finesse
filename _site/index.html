@@ -7,20 +7,20 @@
     <title> / finesse</title> 
     
     <!-- Compass with SASS -->
-  	<link href="http://metamn.github.io/finesse/assets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  	<link href="http://metamn.github.io/finesse/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     
     <!--[if lt IE 9]>
-        <link href="http://metamn.github.io/finesse/assets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="http://metamn.github.io/finesse/assets/styles/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
 
     <!--[if lt IE 9]>
-      <script src="http://metamn.github.io/finesse/assets/html5shiv.js"></script>
+      <script src="http://metamn.github.io/finesse/assets/scripts/html5shiv.js"></script>
     <![endif]-->
     <!--[if (lt IE 9) & (!IEMobile)]>
     	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
     
-    <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700|Lato:100' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700|Lato:100,300' rel='stylesheet' type='text/css'>
   </head>
   
   <body class=" frontpage">
@@ -29,47 +29,65 @@
     
 
 
-<section id="intro">
-  <h3>Intro</h3>
-  <header>
-    <p>a search for <span class="beauty">beauty</span> in</p>
+<header id="intro">
+  <div class="intro">
+    <p>
+      finding the <span>beauty</span> in
+    </p>
     <h1>
       responsive storytelling 
     </h1>
-  </header>
-</section>
+  </div>
+  
+  <div class="navbar">
+  
+
+
+<span class="arrow down">
+  
+  <img src="http://metamn.github.io/finesse/assets/images/arrow-white.svg" onerror="this.onerror=null; this.src='http://metamn.github.io/finesse/assets/images/arrow-white.png'" alt="Scroll to next slide">
+
+
+</span>
+</div>
+</header>
 
 
 <section id="beauty">
   <h3>Beauty</h3>
   
-  <span class="arrow down">
-    <img src="http://metamn.github.io/finesse/assets/images/arrow-white.png" alt="Beauty">
-  </span>
   
-  <span class="reveal-formula"></span>
+  <nav id="beauty-slideshow" class="slideshow" data-item="blockquote" data-navigator="&mdash;" data-autoscroll="auto-scroll">
+  <h3>Slideshow</h3>
   
-  <nav class="slideshow">
-    <h3>Slideshow</h3>
-    
+  
     <blockquote>
-      <span class="beauty">beauty</span> is the experience of pleasure and satisfaction.
+      <span>beauty</span> is the experience of pleasure and satisfaction.
     </blockquote>
     
     <blockquote>
-      <span class="beauty">beauty</span> is that thing worth living and dying for.
+      <span>beauty</span> is that thing worth living and dying for.
     </blockquote>
     
     <blockquote>
-      <span class="beauty">beauty</span> is oneness and diversity in harmony.
+      <span>beauty</span> is oneness and diversity in harmony.
     </blockquote>
-    
-    <ul>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-    </ul>
-  </nav>
+  
+  
+  
+</nav>
+  
+  <div class="navbar">
+  
+
+
+<span class="arrow down">
+  
+  <img src="http://metamn.github.io/finesse/assets/images/arrow.svg" onerror="this.onerror=null; this.src='http://metamn.github.io/finesse/assets/images/arrow.png'" alt="Scroll to next slide">
+
+
+</span>
+</div>
 </section>
 
 
@@ -77,80 +95,45 @@
   <h3>Formula</h3>
   
   <div class="formula">
-    <div>oneness <span>&</span> diversity</div>
-    <div>harmony</div>
-  </div>
+  <div>oneness <span>&</span> diversity</div>
+  <div>harmony</div>
+</div>
+  <div class="button">
+  <span>play</span>
   
-  <div class="arrow right">
-    play <img src="http://metamn.github.io/finesse/assets/images/arrow.png" alt="Start Playing">
-  </div>
+
+
+<span class="arrow right">
   
-  <div class="play">
-    <h2>Let's play!</h2>
+  <img src="http://metamn.github.io/finesse/assets/images/arrow.svg" onerror="this.onerror=null; this.src='http://metamn.github.io/finesse/assets/images/arrow.png'" alt="">
+
+
+</span>
+</div>
+  
+  <div class="notes">
     <p>
       The following slides will play with oneness, diversity and harmony.
     </p>
     <p>
-      Tap the screen to reveal if they have the beauty in, or not.
+      Tap the screen to check if they meet, or not, the formula of beauty.
     </p>
   </div> 
 </section>
 
-
-<section class="play">
-  <h3>Play</h3>
-  
-  <div class="formula">
-    <div>oneness <span>&</span> diversity</div>
-    <div>harmony</div>
-  </div>
-  
-  <p class="help">
-    Use keys to navigate, tap for more information.
-  </p>
-  
-  <nav>
-    <h3>Navigation</h3>
-    <ul>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-    </ul>
-  </nav>
-</section>
-
-
 </div>
-
-
 <!-- jQuery from CDN and local fallback -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('/assets/jquery-1.10.2.min.js">\x3C/script>')</script>
-
-<!-- jsPlumb
-<script src="http://metamn.github.io/finesse/assets/jquery.jsPlumb-1.6.2-min.js"></script>
--->
+<script>window.jQuery || document.write('/assets/scripts/jquery-1.10.2.min.js">\x3C/script>')</script>
 
 <!-- Site specific scripts  -->
-<script src="http://metamn.github.io/finesse/assets/jquery.init.js"></script>
+<script src="http://metamn.github.io/finesse/assets/scripts/jquery.init.js?1"></script>
 
 <script>
   var elements = '[{"id" : "header", "type" : "text"},{"id" : ".intro", "type" : "text"},{"id" : ".beauty", "type" : "image"}]';
 </script>
 
 <!-- the visual grid -->
-<script type="text/javascript" src="http://metamn.github.io/finesse/assets/jquery.visual.grid.js"></script>
+<script type="text/javascript" src="http://metamn.github.io/finesse/assets/scripts/jquery.visual.grid.js"></script>
 </body>
 </html>
