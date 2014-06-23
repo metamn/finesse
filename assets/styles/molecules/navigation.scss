@@ -1,4 +1,22 @@
-
+@mixin button {
+  @include arrow(right, $gutter/2);
+  
+  border: 1px solid $dark-grey;
+  @include border-radius($gutter/4);
+  padding: $gutter/2 $gutter;
+  
+  font-size: smaller;
+  cursor: pointer;
+  
+  img {
+    position: relative;
+    top: 1px;
+  }
+  
+  &:hover {
+    border: 2px solid $color;
+  }
+}
 
 @mixin slideshow {  
   blockquote {

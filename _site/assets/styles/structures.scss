@@ -5,12 +5,10 @@
     @include formula;
   }
   
-  .arrow {
-    @include block;
-    margin: $gutter 0;
-    
+  .button {
     @include to-centre($text-width/2);
-    @include arrow;
+    @include button;
+    margin-top: $gutter*2;
   }
   
   .notes {
@@ -53,12 +51,11 @@
   height: 100%;
   position: relative;
   
-  p, h1 {
+  .intro {
     @include center;
   }
   
-  p { 
-    margin-bottom: $gutter;
+  p {
     span {
       @include intro-beauty;
       @include animation-intro-beauty;

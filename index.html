@@ -3,12 +3,14 @@ layout: frontpage
 ---
 
 <header id="intro">
-  <p>
-    finding the <span>beauty</span> in
-  </p>
-  <h1>
-    responsive storytelling 
-  </h1>
+  <div class="intro">
+    <p>
+      finding the <span>beauty</span> in
+    </p>
+    <h1>
+      responsive storytelling 
+    </h1>
+  </div>
   
   {% include molecules/section-navbar.html icon="arrow-white" %}
 </header>
@@ -40,7 +42,7 @@ layout: frontpage
   <h3>Formula</h3>
   
   {% include molecules/formula.html %}
-  {% include atoms/arrow.html orientation="right" icon="arrow" title="Let's play!" text="Let's play!" %}
+  {% include molecules/button.html text="play" %}
   
   <div class="notes">
     <p>

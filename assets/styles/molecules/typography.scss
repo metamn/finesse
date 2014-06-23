@@ -5,13 +5,13 @@
   position: absolute;
   bottom: $gutter;
   
-  font-family: 'Lato';
-  font-weight: 300;
   color: $dark-grey;
+  font-size: smaller;
 }
 
 @mixin formula {
   @include to-centre($text-width/2);
+  
   font-style: italic;
   
   div {

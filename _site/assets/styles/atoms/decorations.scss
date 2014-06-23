@@ -5,11 +5,11 @@
 }
 
 
-@mixin arrow($orientation: false) {
+@mixin arrow($orientation: false, $icon-width: $gutter) {
   display: inline-block;
   
   img {
-    width: $gutter;
+    width: $icon-width;
     
     @if ($orientation == down) {
       @include transform(rotate(90deg));
