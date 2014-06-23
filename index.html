@@ -4,7 +4,7 @@ layout: frontpage
 
 <header id="intro">
   <p>
-    a search for <span>beauty</span> in
+    finding the <span>beauty</span> in
   </p>
   <h1>
     responsive storytelling 
@@ -39,17 +39,10 @@ layout: frontpage
 <section id="formula">
   <h3>Formula</h3>
   
-  <div class="formula">
-    <div>oneness <span>&</span> diversity</div>
-    <div>harmony</div>
-  </div>
+  {% include molecules/formula.html %}
+  {% include atoms/arrow.html orientation="right" icon="arrow" title="Let's play!" text="Let's play!" %}
   
-  <div class="arrow right">
-    play <img src="{{ site.url }}/assets/images/arrow.png" alt="Start Playing">
-  </div>
-  
-  <div class="play">
-    <h2>Let's play!</h2>
+  <div class="notes">
     <p>
       The following slides will play with oneness, diversity and harmony.
     </p>
@@ -57,39 +50,4 @@ layout: frontpage
       Tap the screen to check if they meet, or not, the formula of beauty.
     </p>
   </div> 
-</section>
-
-
-<section class="play">
-  <h3>Play</h3>
-  
-  <div class="formula">
-    <div>oneness <span>&</span> diversity</div>
-    <div>harmony</div>
-  </div>
-  
-  <div class="help">
-    Use keys to navigate, tap for more information.
-  </div>
-  
-  <nav>
-    <h3>Navigation</h3>
-    <ul>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-      <li>&mdash;</li>
-    </ul>
-  </nav>
 </section>

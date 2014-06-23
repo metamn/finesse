@@ -14,6 +14,7 @@ $('document').ready(function() {
   $('#beauty-slideshow').bind('slideshowItemClicked', function(event, item) { 
     if (item == 2) {
       $('#beauty .navbar').addClass('active'); 
+      $('#formula').addClass('active');
     }
   });
   

@@ -25,12 +25,9 @@ html {
         }
         
         &#formula {
-          @include formula;
+          @include formula-slide;
         }
         
-        &.play {
-          @include play;
-        }
       } 
     }
   }
