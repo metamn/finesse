@@ -20,6 +20,11 @@ Yet again experts needed to code content to web.
 
 ## A possible future
 
+Technology disrupts itself at a fast pace eliminating middleman. New tools will let content creators to design and develop beautiful stories live, inside the browser, without the need of third party experts.
+
+The new black in web design and development are web components. They are living, pre-designed elements you can use to create rich stories. Photoshop for the web. Imagine adding a slideshow, a big background image, a perfect headline and excerpt to your web document with a click. All of them following your brand styleguide definitions..
+
+
 
 
 
