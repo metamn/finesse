@@ -1,0 +1,53 @@
+@mixin arrow-for-section-navbar($c) {
+  @include arrow(down);
+  background: $c;
+  @include circle($gutter/2 - $gutter/8 $gutter/2, $gutter);
+  
+  @include center(horizontal);
+  position: absolute;
+  top: - $gutter/2;
+  
+  cursor: pointer;
+}
+
+
+@mixin beauty($padding, $radius) {
+  @include color($color, $beauty);
+  @include circle($padding, $radius);
+  
+  border: 1px solid transparent;
+  font-style: italic;
+}
+
+
+@mixin notes {
+  @include center(horizontal);
+  max-width: $text-width;
+  
+  position: absolute;
+  bottom: $gutter*2;
+  
+  color: $dark-grey;
+  font-size: smaller;
+}
+
+
+@mixin formula {
+  max-width: $text-width/2;
+  
+  font-style: italic;
+  
+  div {
+    span {
+      @include beauty($gutter/3 $gutter/2, $gutter);
+      font-style: normal;
+      @include animation-beauty(1s, 3s);
+    }
+    
+    &:nth-of-type(2) {
+      border-top: 1px solid;
+    }
+  }
+}
+
+
