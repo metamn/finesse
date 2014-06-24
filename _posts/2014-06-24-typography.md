@@ -2,7 +2,7 @@
 published: false
 ---
 
-## A short history of telling stories on the web
+## A short history 
 
 Telling stories on the web is old as the web itself. What changed over decades is *who* creates the story.
 
@@ -16,6 +16,9 @@ Presenting and packaging data had secondary or no importance. Content silos offe
 
 To stand out, premium players had to hire an interactive agency or a web design & development studio to add personal and creative touch to their content.
 
+Yet again experts needed to code content to web.
+
+## A possible future
 
 
 
