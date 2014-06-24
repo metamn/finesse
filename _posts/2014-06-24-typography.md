@@ -22,7 +22,18 @@ Yet again experts needed to code content to web.
 
 Technology disrupts itself at a fast pace eliminating middleman. New tools will let content creators to design and develop beautiful stories live, inside the browser, without the need of third party experts.
 
-The new black in web design and development are web components. They are living, pre-designed elements you can use to create rich stories. Photoshop for the web. Imagine adding a slideshow, a big background image, a perfect headline and excerpt to your web document with a click. All of them following your brand styleguide definitions..
+The new black in web design and development are web components. They are living, pre-designed elements you can use to create rich stories. Photoshop for the web. Imagine adding a slideshow, a big background image, a perfect headline and excerpt to your web document with a click. All of them following your brand styleguide definitions.
+
+This is the no-CMS (Content Management System) era. Nothing stands between the content designer and the final living product.
+
+## The current state of storytelling
+
+The parts are ready but the whole experience is (years) ahead.
+
+Web components took off this spring of 2014. Collecting them into brand styleguides and building web experiences with -- I saw only at Lonely Planet. A Photoshop like drag-and drop live, component based environment is unseen yet.
+
+What's left to you, content designer, is to work closely with somebody who has ready all the web components you might need. And helps you assembly your story in a responsive way, driving your visitors attention to your editorial / business goals.
+
 
 
 
