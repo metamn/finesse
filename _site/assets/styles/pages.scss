@@ -29,6 +29,10 @@ html {
         }
         
       } 
+      
+      header, section#quotes, section#play {
+        display: none !important;
+      }
     }
   }
 }

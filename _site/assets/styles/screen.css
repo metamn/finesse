@@ -102,3 +102,4 @@ html body.frontpage section#play .to-center .button img { position: relative; to
 html body.frontpage section#play .to-center .button:hover { font-style: italic; }
 html body.frontpage section#play .notes { position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); text-align: center; max-width: 31.25em; position: absolute; bottom: 2.5em; color: #676f73; font-size: smaller; }
 html body.frontpage section#play.active { display: block; }
+html body.frontpage header, html body.frontpage section#quotes, html body.frontpage section#play { display: none !important; }

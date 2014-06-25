@@ -1,0 +1,5 @@
+<section id="{{ post.title | downcase | remove:',' | remove:'&' | replace:' ', '-' }}" class="play">
+  <h3>{{ post.title }}</h3>
+  
+  {{ post.content }}
+</section>

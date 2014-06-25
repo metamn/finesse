@@ -1,0 +1,18 @@
+{% if link_id %}
+  {% assign link = page.links[link_id] %}
+  {% assign url = link.url %}
+  {% assign title = link.title %}
+  {% assign target = link.target %}
+{% endif %}
+
+{% if include.text %}
+  {% assign text = include.text %}
+{% else %}
+  {% assign text = include.title %}
+{% endif %}
+
+{% if include.target %}
+  {% assign target = include.target %}
+{% endif %}
+
+<a href="{{ url }}" title="{{ title }}" target="{{ target }}">{{ text }}</a>

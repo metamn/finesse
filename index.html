@@ -55,3 +55,8 @@ layout: frontpage
     </p>
   </div>
 </section>
+
+
+{% for post in site.categories.play %}
+  {% include article-play.html %} 
+{% endfor %}
